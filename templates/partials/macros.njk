@@ -1,0 +1,22 @@
+{% macro newsCard(item, featured=false) %}
+<a class="news-card{{ ' featured' if featured }}" href="{{ item.link }}" target="_blank" rel="noopener nofollow">
+  <div class="source">{{ item.source }}</div>
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.excerpt }}</p>
+  <span class="read-more">Leer más →</span>
+</a>
+{% endmacro %}
+
+{% macro adSlot(site, slot, label) %}
+{% if site.adsense.clientId and site.adsense.slots[slot] %}
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="{{ site.adsense.clientId }}"
+     data-ad-slot="{{ site.adsense.slots[slot] }}"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+{% else %}
+<div class="ad-slot">Espacio publicitario ({{ label or slot }})</div>
+{% endif %}
+{% endmacro %}

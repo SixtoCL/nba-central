@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+{% block content %}
+<div class="card">
+  <div class="section-title">Equipos NBA</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Equipo</th><th>Conferencia</th><th>División</th></tr></thead>
+      <tbody>
+        {% for team in teams %}
+        <tr><td><a href="/equipos/{{ team.slug }}/index.html">{{ team.full_name }}</a></td><td>{{ team.conference }}</td><td>{{ team.division }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

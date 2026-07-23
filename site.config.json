@@ -1,0 +1,33 @@
+{
+  "siteName": "NBA Central",
+  "siteTagline": "Noticias, estadisticas y cuotas de la NBA",
+  "siteUrl": "https://nba-central.example.com",
+  "locale": "es-ES",
+  "currentSeason": 2025,
+  "lastNSeasons": 5,
+  "adsense": {
+    "clientId": "",
+    "slots": {
+      "header": "",
+      "inContent": "",
+      "sidebar": "",
+      "footer": ""
+    }
+  },
+  "odds": {
+    "regions": "eu,uk",
+    "markets": "h2h,spreads,totals",
+    "oddsFormat": "decimal"
+  },
+  "newsFeeds": [
+    { "name": "ESPN NBA", "url": "https://www.espn.com/espn/rss/nba/news" },
+    { "name": "Yahoo Sports NBA", "url": "https://sports.yahoo.com/nba/rss.xml" },
+    { "name": "CBS Sports NBA", "url": "https://www.cbssports.com/rss/headlines/nba/" },
+    { "name": "Sporting News NBA", "url": "https://www.sportingnews.com/us/nba.rss" }
+  ],
+  "newsPerDay": 10,
+  "responsibleGambling": {
+    "text": "Juega con responsabilidad. Prohibido a menores de 18 anos. Si el juego deja de ser un entretenimiento, llama al 900 200 225 (linea de ayuda sobre juego, gratuita y confidencial).",
+    "helpline": "900 200 225"
+  }
+}

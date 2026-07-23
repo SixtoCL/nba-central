@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="card">
+  {% if sample %}<div class="sample-banner">Estadisticas de muestra para este partido (pendiente de activar el plan de pago).</div>{% endif %}
+  <div class="eyebrow">{{ game.date }} · {{ 'Playoffs' if game.postseason else 'Temporada regular' }}</div>
+  <div class="scoreboard">
+    <div class="team {{ 'winner' if game.visitor_team_score > game.home_team_score }}">
+      <div>{{ game.visitor_team.full_name }}</div>
+      <div class="score">{{ game.visitor_team_score }}</div>
+    </div>
+    <div class="vs">FINAL</div>
+    <div class="team {{ 'winner' if game.home_team_score > game.visitor_team_score }}">
+      <div>{{ game.home_team.full_name }}</div>
+      <div class="score">{{ game.home_team_score }}</div>
+    </div>
+  </div>
+  {% if recap %}<p class="recap-text">{{ recap }}</p>{% endif %}
+</div>
+
+{{ m.adSlot(site, "inContent", "Publicidad") }}
+
+<div class="card">
+  <div class="section-title">{{ game.visitor_team.full_name }} · Estadísticas</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Jugador</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>ROB</th><th>TAP</th><th>TC</th><th>3PT</th><th>TL</th><th>+/-</th></tr></thead>
+      <tbody>
+        {% for s in awayStats %}
+        <tr>
+          <td><a href="/jugadores/{{ s.playerSlug }}/index.html">{{ s.player.first_name }} {{ s.player.last_name }}</a></td>
+          <td>{{ s.min }}</td><td>{{ s.pts }}</td><td>{{ s.reb }}</td><td>{{ s.ast }}</td><td>{{ s.stl }}</td><td>{{ s.blk }}</td>
+          <td>{{ s.fgm }}/{{ s.fga }}</td><td>{{ s.fg3m }}/{{ s.fg3a }}</td><td>{{ s.ftm }}/{{ s.fta }}</td><td>{{ s.plus_minus }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="section-title">{{ game.home_team.full_name }} · Estadísticas</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Jugador</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>ROB</th><th>TAP</th><th>TC</th><th>3PT</th><th>TL</th><th>+/-</th></tr></thead>
+      <tbody>
+        {% for s in homeStats %}
+        <tr>
+          <td><a href="/jugadores/{{ s.playerSlug }}/index.html">{{ s.player.first_name }} {{ s.player.last_name }}</a></td>
+          <td>{{ s.min }}</td><td>{{ s.pts }}</td><td>{{ s.reb }}</td><td>{{ s.ast }}</td><td>{{ s.stl }}</td><td>{{ s.blk }}</td>
+          <td>{{ s.fgm }}/{{ s.fga }}</td><td>{{ s.fg3m }}/{{ s.fg3a }}</td><td>{{ s.ftm }}/{{ s.fta }}</td><td>{{ s.plus_minus }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

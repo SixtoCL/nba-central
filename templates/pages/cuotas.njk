@@ -1,0 +1,34 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="card">
+  {% if sample %}<div class="sample-banner">Cuotas de muestra: activa el plan Professional de The Odds API para ver cuotas reales.</div>{% endif %}
+  <div class="section-title">Cuotas NBA</div>
+  <div class="odds-disclaimer">Las cuotas mostradas son orientativas y cambian constantemente: comprueba siempre la cuota real en la casa de apuestas antes de apostar. {{ site.responsibleGambling.text }}</div>
+
+  {% if oddsData and oddsData.length %}
+    {% for g in oddsData %}
+    <div class="odds-game">
+      <h3>{{ g.away_team }} @ {{ g.home_team }} {% if g.game_id %}· <a href="/partidos/{{ g.date }}/{{ g.game_id }}.html">ficha del partido</a>{% endif %}</h3>
+      {% for b in g.bookmakers %}
+      <div class="odds-book-row">
+        <span class="book">{{ b.title }}</span>
+        <span class="odds-price">
+          {% for market in b.markets %}
+            {% for o in market.outcomes %}
+              <span title="{{ market.key }}">{{ o.name }}{% if o.point %} ({{ o.point }}){% endif %} {{ o.price }}</span>
+            {% endfor %}
+          {% endfor %}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+    {% if loop.index == 3 %}
+      {{ m.adSlot(site, "inContent", "Publicidad") }}
+    {% endif %}
+    {% endfor %}
+  {% else %}
+    <p style="padding:16px">No hay cuotas disponibles ahora mismo.</p>
+  {% endif %}
+</div>
+{% endblock %}

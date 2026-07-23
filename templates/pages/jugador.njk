@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="entity-header">
+  <div>
+    {% if team %}<span class="badge">{{ team.full_name }}</span>{% endif %}
+    <h1>{{ player.full_name }}</h1>
+    <div class="entity-meta">{{ player.position or '—' }} · {{ player.height or '—' }} · {{ player.weight }} lb {% if player.college %}· {{ player.college }}{% endif %}</div>
+  </div>
+</div>
+
+{{ m.adSlot(site, "inContent", "Publicidad") }}
+
+<div class="card">
+  {% if seasonHistorySample %}<div class="sample-banner">Estadísticas de muestra hasta activar el plan de pago de balldontlie.io.</div>{% endif %}
+  <div class="section-title">Últimas {{ seasonHistory.length }} temporadas</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Temporada</th><th>PJ</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>TC%</th><th>3PT%</th><th>TL%</th></tr></thead>
+      <tbody>
+        {% for row in seasonHistory %}
+        <tr>
+          <td>{{ row.season }}-{{ (row.season + 1) % 100 }}</td><td>{{ row.gp }}</td><td>{{ row.min }}</td>
+          <td>{{ row.pts }}</td><td>{{ row.reb }}</td><td>{{ row.ast }}</td>
+          <td>{{ (row.fg_pct * 100) | round(1) }}%</td><td>{{ (row.fg3_pct * 100) | round(1) }}%</td><td>{{ (row.ft_pct * 100) | round(1) }}%</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% if recentGames and recentGames.length %}
+<div class="card">
+  <div class="section-title">Últimos partidos</div>
+  <ul class="widget-list">
+    {% for g in recentGames %}
+    <li>
+      <span>{{ g.date }} vs {{ g.opponent }}</span>
+      <span><a href="/partidos/{{ g.date }}/{{ g.gameId }}.html">{{ g.pts }} pts · {{ g.reb }} reb · {{ g.ast }} ast</a></span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+{% endblock %}

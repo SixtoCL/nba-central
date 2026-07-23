@@ -1,0 +1,92 @@
+[
+  {
+    "player_id": 93,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 1,
+    "games_played": 51,
+    "sample": true
+  },
+  {
+    "player_id": 98,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 2,
+    "games_played": 61,
+    "sample": true
+  },
+  {
+    "player_id": 196,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 3,
+    "games_played": 69,
+    "sample": true
+  },
+  {
+    "player_id": 1,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 4,
+    "games_played": 66,
+    "sample": true
+  },
+  {
+    "player_id": 53,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 5,
+    "games_played": 43,
+    "sample": true
+  },
+  {
+    "player_id": 59,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 6,
+    "games_played": 57,
+    "sample": true
+  },
+  {
+    "player_id": 64,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 7,
+    "games_played": 76,
+    "sample": true
+  },
+  {
+    "player_id": 86,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 8,
+    "games_played": 41,
+    "sample": true
+  },
+  {
+    "player_id": 132,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 9,
+    "games_played": 55,
+    "sample": true
+  },
+  {
+    "player_id": 150,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2021,
+    "rank": 10,
+    "games_played": 70,
+    "sample": true
+  }
+]

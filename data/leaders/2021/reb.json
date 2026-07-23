@@ -1,0 +1,92 @@
+[
+  {
+    "player_id": 65,
+    "value": 33,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 1,
+    "games_played": 45,
+    "sample": true
+  },
+  {
+    "player_id": 181,
+    "value": 33,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 2,
+    "games_played": 57,
+    "sample": true
+  },
+  {
+    "player_id": 188,
+    "value": 33,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 3,
+    "games_played": 65,
+    "sample": true
+  },
+  {
+    "player_id": 55,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 4,
+    "games_played": 59,
+    "sample": true
+  },
+  {
+    "player_id": 58,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 5,
+    "games_played": 61,
+    "sample": true
+  },
+  {
+    "player_id": 112,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 6,
+    "games_played": 66,
+    "sample": true
+  },
+  {
+    "player_id": 153,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 7,
+    "games_played": 43,
+    "sample": true
+  },
+  {
+    "player_id": 215,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 8,
+    "games_played": 52,
+    "sample": true
+  },
+  {
+    "player_id": 247,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 9,
+    "games_played": 41,
+    "sample": true
+  },
+  {
+    "player_id": 256,
+    "value": 32,
+    "stat_type": "reb",
+    "season": 2021,
+    "rank": 10,
+    "games_played": 78,
+    "sample": true
+  }
+]

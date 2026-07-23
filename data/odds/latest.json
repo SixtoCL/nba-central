@@ -1,0 +1,872 @@
+[
+  {
+    "game_id": 202500174,
+    "commence_time": "2026-03-08",
+    "home_team": "Washington Wizards",
+    "away_team": "Atlanta Hawks",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.4
+              },
+              {
+                "name": "Atlanta Hawks",
+                "price": 1.65
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 217,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 217,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 3.11
+              },
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.76
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 225,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 225,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.95
+              },
+              {
+                "name": "Atlanta Hawks",
+                "price": 3.18
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 230,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 230,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.83
+              },
+              {
+                "name": "Atlanta Hawks",
+                "price": 2.38
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 214,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 214,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  },
+  {
+    "game_id": 202500175,
+    "commence_time": "2026-07-11",
+    "home_team": "Washington Wizards",
+    "away_team": "Boston Celtics",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.63
+              },
+              {
+                "name": "Boston Celtics",
+                "price": 1.72
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 221,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 221,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 3.34
+              },
+              {
+                "name": "Boston Celtics",
+                "price": 3.11
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 234,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 234,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.65
+              },
+              {
+                "name": "Boston Celtics",
+                "price": 1.87
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 222,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 222,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.75
+              },
+              {
+                "name": "Boston Celtics",
+                "price": 3.31
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 231,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 231,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  },
+  {
+    "game_id": 202500176,
+    "commence_time": "2026-02-02",
+    "home_team": "Washington Wizards",
+    "away_team": "Brooklyn Nets",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.71
+              },
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.46
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 212,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 212,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.46
+              },
+              {
+                "name": "Brooklyn Nets",
+                "price": 3.35
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 223,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 223,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.8
+              },
+              {
+                "name": "Brooklyn Nets",
+                "price": 1.82
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 214,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 214,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.03
+              },
+              {
+                "name": "Brooklyn Nets",
+                "price": 2.14
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 226,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 226,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  },
+  {
+    "game_id": 202500177,
+    "commence_time": "2026-01-04",
+    "home_team": "Washington Wizards",
+    "away_team": "Charlotte Hornets",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.97
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.93
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 233,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 233,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.67
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.75
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 228,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 228,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.9
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 1.99
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 212,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 212,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.15
+              },
+              {
+                "name": "Charlotte Hornets",
+                "price": 2.09
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 230,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 230,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  },
+  {
+    "game_id": 202500178,
+    "commence_time": "2026-02-15",
+    "home_team": "Washington Wizards",
+    "away_team": "Chicago Bulls",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.82
+              },
+              {
+                "name": "Chicago Bulls",
+                "price": 1.6
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 228,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 228,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.94
+              },
+              {
+                "name": "Chicago Bulls",
+                "price": 2.18
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 225,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 225,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.56
+              },
+              {
+                "name": "Chicago Bulls",
+                "price": 2.1
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 222,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 222,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.71
+              },
+              {
+                "name": "Chicago Bulls",
+                "price": 3.22
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 231,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 231,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  },
+  {
+    "game_id": 202500179,
+    "commence_time": "2026-01-26",
+    "home_team": "Washington Wizards",
+    "away_team": "Cleveland Cavaliers",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.52
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 2.36
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 231,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 231,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.49
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 2.66
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 229,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 229,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 2.42
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 2.78
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 223,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 223,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Washington Wizards",
+                "price": 1.83
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 3.32
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 232,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 232,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  }
+]

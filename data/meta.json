@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-07-23T18:03:23.568Z",
+  "seasons": [
+    2025,
+    2024,
+    2023,
+    2022,
+    2021
+  ],
+  "currentSeason": 2025,
+  "usingSampleData": {
+    "teams": true,
+    "players": true,
+    "games": true,
+    "seasonAverages": true,
+    "standings": true,
+    "leaders": true,
+    "boxscores": true,
+    "odds": true
+  }
+}

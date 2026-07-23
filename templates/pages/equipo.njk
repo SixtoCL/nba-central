@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="entity-header">
+  <div>
+    <span class="badge">{{ team.conference }} · {{ team.division }}</span>
+    <h1>{{ team.full_name }}</h1>
+    <div class="entity-meta">
+      {% if standing %}Temporada {{ meta.currentSeason }}: {{ standing.wins }}-{{ standing.losses }} · Conferencia #{{ standing.conference_rank }}{% else %}Sin datos de clasificación todavía{% endif %}
+    </div>
+  </div>
+</div>
+
+{{ m.adSlot(site, "inContent", "Publicidad") }}
+
+<div class="card">
+  <div class="section-title">Últimas {{ seasonHistory.length }} temporadas</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Temporada</th><th>V</th><th>D</th><th>PTS a favor</th><th>PTS en contra</th></tr></thead>
+      <tbody>
+        {% for row in seasonHistory %}
+        <tr><td>{{ row.season }}-{{ (row.season + 1) % 100 }}</td><td>{{ row.wins }}</td><td>{{ row.losses }}</td><td>{{ row.ppg }}</td><td>{{ row.oppPpg }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="section-title">Plantilla</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Jugador</th><th>Pos</th><th>Altura</th><th>Peso</th></tr></thead>
+      <tbody>
+        {% for p in roster %}
+        <tr><td><a href="/jugadores/{{ p.slug }}/index.html">{{ p.full_name }}</a></td><td>{{ p.position }}</td><td>{{ p.height }}</td><td>{{ p.weight }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="section-title">Últimos partidos</div>
+  <ul class="widget-list">
+    {% for g in recentGames %}
+    <li>
+      <span>{{ g.date }} vs {{ g.opponent.abbreviation }}</span>
+      <span>
+        <span class="{{ 'win-badge' if g.won else 'loss-badge' }}">{{ 'V' if g.won else 'D' }}</span>
+        <a href="/partidos/{{ g.date }}/{{ g.id }}.html">{{ g.teamScore }}-{{ g.oppScore }}</a>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

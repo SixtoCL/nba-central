@@ -1,0 +1,17 @@
+<div class="ticker">
+  <div class="container">
+    <div class="ticker-inner">
+      {% if todaysGames and todaysGames.length %}
+        {% for g in todaysGames %}
+        <a class="ticker-game" href="/partidos/{{ g.date }}/{{ g.id }}.html">
+          <span class="status">{{ g.status }}</span>
+          <span class="ticker-row"><span>{{ g.visitor_team.abbreviation }}</span><span>{{ g.visitor_team_score }}</span></span>
+          <span class="ticker-row"><span>{{ g.home_team.abbreviation }}</span><span>{{ g.home_team_score }}</span></span>
+        </a>
+        {% endfor %}
+      {% else %}
+        <span class="ticker-empty">No hay partidos programados para hoy.</span>
+      {% endif %}
+    </div>
+  </div>
+</div>

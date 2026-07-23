@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="card">
+  <div class="section-title">Estadísticas · Temporada {{ season }}-{{ (season + 1) % 100 }}</div>
+  <div class="season-tabs">
+    {% for s in seasons %}
+      <a href="{{ '/estadisticas/index.html' if s == meta.currentSeason else '/estadisticas/temporada-' + s|string + '/index.html' }}" class="{{ 'active' if s == season }}">{{ s }}-{{ (s + 1) % 100 }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="page-layout">
+  <div>
+    {% for statLabel, rows in leadersByStat %}
+    <div class="card widget">
+      <div class="section-title">Líderes · {{ statLabel }}</div>
+      <ul class="widget-list">
+        {% for row in rows %}
+        <li><span class="rank">{{ row.rank }}</span> <a href="/jugadores/{{ row.player.slug }}/index.html">{{ row.player.full_name }}</a> <span>{{ row.value }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  <aside>
+    {{ m.adSlot(site, "sidebar", "Publicidad") }}
+    <div class="card widget">
+      <div class="section-title">Este</div>
+      <ul class="widget-list">
+        {% for row in standingsEast %}
+        <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="card widget">
+      <div class="section-title">Oeste</div>
+      <ul class="widget-list">
+        {% for row in standingsWest %}
+        <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>
+{% endblock %}

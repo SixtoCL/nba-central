@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head>
+{% include "partials/head-meta.njk" %}
+</head>
+<body>
+{% include "partials/header.njk" %}
+
+<main class="container">
+  {% block content %}{% endblock %}
+</main>
+
+{% include "partials/footer.njk" %}
+</body>
+</html>

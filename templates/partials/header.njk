@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container site-header-bar">
+    <a class="brand" href="/">NBA<span class="dot">●</span>Central</a>
+    <nav class="main-nav" data-main-nav aria-label="Navegacion principal">
+      <a href="/" class="{{ 'active' if nav == 'home' }}">Portada</a>
+      <a href="/noticias/" class="{{ 'active' if nav == 'noticias' }}">Noticias</a>
+      <a href="/equipos/" class="{{ 'active' if nav == 'equipos' }}">Equipos</a>
+      <a href="/jugadores/" class="{{ 'active' if nav == 'jugadores' }}">Jugadores</a>
+      <a href="/estadisticas/" class="{{ 'active' if nav == 'estadisticas' }}">Estadisticas</a>
+      <a href="/cuotas/" class="{{ 'active' if nav == 'cuotas' }}">Cuotas</a>
+    </nav>
+    <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+{% include "partials/scores-ticker.njk" %}
+
+{% if meta.usingSampleData.teams or meta.usingSampleData.players or meta.usingSampleData.games or meta.usingSampleData.seasonAverages or meta.usingSampleData.standings or meta.usingSampleData.leaders or meta.usingSampleData.boxscores or meta.usingSampleData.odds %}
+<div class="sample-banner">Modo demo: algunas estadisticas/cuotas de esta pagina son de muestra hasta que se active la API de pago correspondiente.</div>
+{% endif %}

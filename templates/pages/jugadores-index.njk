@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+{% block content %}
+<div class="card">
+  <div class="section-title">Jugadores NBA</div>
+  <div class="table-scroll">
+    <table class="stat-table">
+      <thead><tr><th>Jugador</th><th>Equipo</th><th>Pos</th></tr></thead>
+      <tbody>
+        {% for player in players %}
+        <tr><td><a href="/jugadores/{{ player.slug }}/index.html">{{ player.full_name }}</a></td><td>{{ player.teamName or '—' }}</td><td>{{ player.position }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

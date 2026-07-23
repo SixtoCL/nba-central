@@ -1,0 +1,92 @@
+[
+  {
+    "player_id": 72,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 1,
+    "games_played": 49,
+    "sample": true
+  },
+  {
+    "player_id": 102,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 2,
+    "games_played": 69,
+    "sample": true
+  },
+  {
+    "player_id": 131,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 3,
+    "games_played": 48,
+    "sample": true
+  },
+  {
+    "player_id": 141,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 4,
+    "games_played": 73,
+    "sample": true
+  },
+  {
+    "player_id": 174,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 5,
+    "games_played": 66,
+    "sample": true
+  },
+  {
+    "player_id": 270,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 6,
+    "games_played": 78,
+    "sample": true
+  },
+  {
+    "player_id": 26,
+    "value": 32,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 7,
+    "games_played": 61,
+    "sample": true
+  },
+  {
+    "player_id": 74,
+    "value": 32,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 8,
+    "games_played": 46,
+    "sample": true
+  },
+  {
+    "player_id": 76,
+    "value": 32,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 9,
+    "games_played": 59,
+    "sample": true
+  },
+  {
+    "player_id": 81,
+    "value": 32,
+    "stat_type": "stl",
+    "season": 2022,
+    "rank": 10,
+    "games_played": 75,
+    "sample": true
+  }
+]

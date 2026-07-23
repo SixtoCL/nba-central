@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="page-layout">
+  <div class="card news-list-page">
+    <div class="section-title">Noticias NBA</div>
+    {% if news and news.length %}
+      {% for item in news %}
+        {{ m.newsCard(item) }}
+        {% if loop.index == 3 %}
+          {{ m.adSlot(site, "inContent", "Publicidad") }}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <p style="padding:16px">No hay noticias disponibles ahora mismo.</p>
+    {% endif %}
+  </div>
+  <aside>
+    {{ m.adSlot(site, "sidebar", "Publicidad") }}
+    <div class="card widget">
+      <div class="section-title">Clasificación (top 5)</div>
+      <ul class="widget-list">
+        {% for row in standingsPreview %}
+        <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>
+{% endblock %}

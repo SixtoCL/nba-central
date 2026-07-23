@@ -1,0 +1,80 @@
+{% extends "layout.njk" %}
+{% import "partials/macros.njk" as m %}
+{% block content %}
+<div class="page-layout">
+  <div>
+    <div class="card">
+      <div class="section-title">Noticias destacadas</div>
+      <div class="hero-news">
+        {% if news and news.length %}
+          {{ m.newsCard(news[0], true) }}
+          <div>
+            {% for item in newsSecondary %}
+              {{ m.newsCard(item) }}
+            {% endfor %}
+          </div>
+        {% else %}
+          <p style="padding:16px">No hay noticias disponibles ahora mismo.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {{ m.adSlot(site, "inContent", "Publicidad") }}
+
+    <div class="card">
+      <div class="section-title">Más noticias</div>
+      {% for item in newsMore %}
+        {{ m.newsCard(item) }}
+      {% endfor %}
+    </div>
+  </div>
+
+  <aside>
+    {{ m.adSlot(site, "sidebar", "Publicidad") }}
+
+    <div class="card widget">
+      <div class="section-title">Líderes de la liga ({{ meta.currentSeason }}-{{ (meta.currentSeason + 1) % 100 }})</div>
+      <ul class="widget-list">
+        {% for row in topScorers %}
+        <li><span class="rank">{{ loop.index }}</span> <a href="/jugadores/{{ row.player.slug }}/index.html">{{ row.player.full_name }}</a> <span>{{ row.value }} pts</span></li>
+        {% endfor %}
+      </ul>
+      <div style="padding:10px 16px"><a href="/estadisticas/">Ver todas las estadísticas →</a></div>
+    </div>
+
+    <div class="card widget">
+      <div class="section-title">Clasificación (top 5)</div>
+      <ul class="widget-list">
+        {% for row in standingsPreview %}
+        <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
+        {% endfor %}
+      </ul>
+      <div style="padding:10px 16px"><a href="/estadisticas/">Ver clasificación completa →</a></div>
+    </div>
+
+    <div class="card widget">
+      <div class="section-title">Cuotas de hoy</div>
+      {% if oddsPreview and oddsPreview.length %}
+        {% for g in oddsPreview %}
+        <div class="odds-game">
+          <h3>{{ g.away_team }} @ {{ g.home_team }}</h3>
+          {% if g.bookmakers[0] %}
+          <div class="odds-book-row">
+            <span class="book">{{ g.bookmakers[0].title }}</span>
+            <span class="odds-price">
+              {% for o in g.bookmakers[0].markets[0].outcomes %}<span>{{ o.name }} {{ o.price }}</span>{% endfor %}
+            </span>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% else %}
+        <p style="padding:12px 16px; font-size:0.85rem; color:var(--ink-soft)">No hay partidos con cuotas disponibles hoy.</p>
+      {% endif %}
+      <div style="padding:10px 16px"><a href="/cuotas/">Ver todas las cuotas →</a></div>
+    </div>
+
+    {{ m.adSlot(site, "sidebar", "Publicidad") }}
+  </aside>
+</div>
+{% endblock %}

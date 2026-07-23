@@ -1,0 +1,92 @@
+[
+  {
+    "player_id": 127,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 1,
+    "games_played": 50,
+    "sample": true
+  },
+  {
+    "player_id": 177,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 2,
+    "games_played": 65,
+    "sample": true
+  },
+  {
+    "player_id": 179,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 3,
+    "games_played": 65,
+    "sample": true
+  },
+  {
+    "player_id": 196,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 4,
+    "games_played": 69,
+    "sample": true
+  },
+  {
+    "player_id": 223,
+    "value": 33,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 5,
+    "games_played": 66,
+    "sample": true
+  },
+  {
+    "player_id": 72,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 6,
+    "games_played": 49,
+    "sample": true
+  },
+  {
+    "player_id": 109,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 7,
+    "games_played": 79,
+    "sample": true
+  },
+  {
+    "player_id": 120,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 8,
+    "games_played": 80,
+    "sample": true
+  },
+  {
+    "player_id": 176,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 9,
+    "games_played": 44,
+    "sample": true
+  },
+  {
+    "player_id": 211,
+    "value": 32,
+    "stat_type": "fg3m",
+    "season": 2025,
+    "rank": 10,
+    "games_played": 48,
+    "sample": true
+  }
+]
