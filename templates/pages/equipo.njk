@@ -32,7 +32,7 @@
       <thead><tr><th>Jugador</th><th>Pos</th><th>Altura</th><th>Peso</th></tr></thead>
       <tbody>
         {% for p in roster %}
-        <tr><td><a href="/jugadores/{{ p.slug }}/index.html">{{ p.full_name }}</a></td><td>{{ p.position }}</td><td>{{ p.height }}</td><td>{{ p.weight }}</td></tr>
+        <tr><td><a href="{{ site.basePath }}/jugadores/{{ p.slug }}/index.html">{{ p.full_name }}</a></td><td>{{ p.position }}</td><td>{{ p.height }}</td><td>{{ p.weight }}</td></tr>
         {% endfor %}
       </tbody>
     </table>
@@ -47,7 +47,7 @@
       <span>{{ g.date }} vs {{ g.opponent.abbreviation }}</span>
       <span>
         <span class="{{ 'win-badge' if g.won else 'loss-badge' }}">{{ 'V' if g.won else 'D' }}</span>
-        <a href="/partidos/{{ g.date }}/{{ g.id }}.html">{{ g.teamScore }}-{{ g.oppScore }}</a>
+        <a href="{{ site.basePath }}/partidos/{{ g.date }}/{{ g.id }}.html">{{ g.teamScore }}-{{ g.oppScore }}</a>
       </span>
     </li>
     {% endfor %}

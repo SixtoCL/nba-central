@@ -12,7 +12,7 @@
       <thead><tr><th>Jugador</th><th>Equipo</th><th>Pos</th></tr></thead>
       <tbody>
         {% for player in players %}
-        <tr><td><a href="/jugadores/{{ player.slug }}/index.html">{{ player.full_name }}</a></td><td>{{ player.teamName or '—' }}</td><td>{{ player.position }}</td></tr>
+        <tr><td><a href="{{ site.basePath }}/jugadores/{{ player.slug }}/index.html">{{ player.full_name }}</a></td><td>{{ player.teamName or '—' }}</td><td>{{ player.position }}</td></tr>
         {% endfor %}
       </tbody>
     </table>

@@ -14,7 +14,7 @@
   {% if oddsData and oddsData.length %}
     {% for g in oddsData %}
     <div class="odds-game" data-reveal>
-      <h3>{{ g.away_team }} @ {{ g.home_team }} {% if g.game_id %}· <a href="/partidos/{{ g.date }}/{{ g.game_id }}.html">ficha del partido</a>{% endif %}</h3>
+      <h3>{{ g.away_team }} @ {{ g.home_team }} {% if g.game_id %}· <a href="{{ site.basePath }}/partidos/{{ g.date }}/{{ g.game_id }}.html">ficha del partido</a>{% endif %}</h3>
       {% for b in g.bookmakers %}
       <div class="odds-book-row">
         <span class="book">{{ b.title }}</span>

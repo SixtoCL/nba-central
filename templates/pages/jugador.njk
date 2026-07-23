@@ -35,7 +35,7 @@
     {% for g in recentGames %}
     <li>
       <span>{{ g.date }} vs {{ g.opponent }}</span>
-      <span><a href="/partidos/{{ g.date }}/{{ g.gameId }}.html">{{ g.pts }} pts · {{ g.reb }} reb · {{ g.ast }} ast</a></span>
+      <span><a href="{{ site.basePath }}/partidos/{{ g.date }}/{{ g.gameId }}.html">{{ g.pts }} pts · {{ g.reb }} reb · {{ g.ast }} ast</a></span>
     </li>
     {% endfor %}
   </ul>

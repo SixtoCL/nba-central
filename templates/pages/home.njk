@@ -8,8 +8,8 @@
     <h1 class="hero-title">Toda la <span>actualidad de la NBA</span>, en un solo sitio.</h1>
     <p class="hero-sub">Noticias del día, estadísticas de las últimas {{ seasonsCount }} temporadas de cada equipo y jugador, y cuotas de apuestas actualizadas para cada partido.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="/noticias/">Ver noticias</a>
-      <a class="btn btn-ghost" href="/cuotas/">Ver cuotas de hoy</a>
+      <a class="btn btn-primary" href="{{ site.basePath }}/noticias/">Ver noticias</a>
+      <a class="btn btn-ghost" href="{{ site.basePath }}/cuotas/">Ver cuotas de hoy</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat" data-reveal><strong data-count-to="{{ teamsCount }}">0</strong><span>Equipos</span></div>
@@ -55,20 +55,20 @@
       <div class="section-title">Líderes de la liga ({{ meta.currentSeason }}-{{ (meta.currentSeason + 1) % 100 }})</div>
       <ul class="widget-list">
         {% for row in topScorers %}
-        <li><span class="rank">{{ loop.index }}</span> <a href="/jugadores/{{ row.player.slug }}/index.html">{{ row.player.full_name }}</a> <span>{{ row.value }} pts</span></li>
+        <li><span class="rank">{{ loop.index }}</span> <a href="{{ site.basePath }}/jugadores/{{ row.player.slug }}/index.html">{{ row.player.full_name }}</a> <span>{{ row.value }} pts</span></li>
         {% endfor %}
       </ul>
-      <div style="padding:10px 20px"><a href="/estadisticas/" class="read-more" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver todas las estadísticas →</a></div>
+      <div style="padding:10px 20px"><a href="{{ site.basePath }}/estadisticas/" class="read-more" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver todas las estadísticas →</a></div>
     </div>
 
     <div class="card widget" data-reveal>
       <div class="section-title">Clasificación (top 5)</div>
       <ul class="widget-list">
         {% for row in standingsPreview %}
-        <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
+        <li><span class="rank">{{ row.conference_rank }}</span> <a href="{{ site.basePath }}/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
         {% endfor %}
       </ul>
-      <div style="padding:10px 20px"><a href="/estadisticas/" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver clasificación completa →</a></div>
+      <div style="padding:10px 20px"><a href="{{ site.basePath }}/estadisticas/" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver clasificación completa →</a></div>
     </div>
 
     <div class="card widget" data-reveal>
@@ -90,7 +90,7 @@
       {% else %}
         <p style="padding:12px 20px; font-size:0.85rem; color:var(--ink-3)">No hay partidos con cuotas disponibles hoy.</p>
       {% endif %}
-      <div style="padding:10px 20px"><a href="/cuotas/" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver todas las cuotas →</a></div>
+      <div style="padding:10px 20px"><a href="{{ site.basePath }}/cuotas/" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver todas las cuotas →</a></div>
     </div>
 
     {{ m.adSlot(site, "sidebar", "Publicidad") }}

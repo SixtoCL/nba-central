@@ -365,9 +365,10 @@ async function main() {
   await fs.writeFile(path.join(DIST_DIR, 'ads.txt'), adsTxt);
 
   // ---------- robots.txt + sitemap.xml ----------
+  const base = site.basePath || '';
   await fs.writeFile(
     path.join(DIST_DIR, 'robots.txt'),
-    `User-agent: *\nAllow: /\nSitemap: ${site.siteUrl}/sitemap.xml\n`
+    `User-agent: *\nAllow: /\nSitemap: ${site.siteUrl}${base}/sitemap.xml\n`
   );
 
   const sitemap = [
@@ -375,7 +376,7 @@ async function main() {
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ...urls.map(
       (u) =>
-        `  <url><loc>${site.siteUrl}${u.loc}</loc><lastmod>${(u.lastmod || meta.generatedAt).slice(0, 10)}</lastmod></url>`
+        `  <url><loc>${site.siteUrl}${base}${u.loc}</loc><lastmod>${(u.lastmod || meta.generatedAt).slice(0, 10)}</lastmod></url>`
     ),
     '</urlset>',
   ].join('\n');

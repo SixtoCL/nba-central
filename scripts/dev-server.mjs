@@ -5,6 +5,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'dist');
 const PORT = 4321;
+const config = JSON.parse(fs.readFileSync(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'site.config.json'), 'utf-8'));
+const BASE = config.basePath || '';
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -18,6 +20,12 @@ const MIME = {
 http
   .createServer((req, res) => {
     let urlPath = decodeURIComponent(req.url.split('?')[0]);
+    if (BASE && urlPath === '/') {
+      res.writeHead(302, { Location: BASE + '/' });
+      res.end();
+      return;
+    }
+    if (BASE && urlPath.startsWith(BASE)) urlPath = urlPath.slice(BASE.length) || '/';
     if (urlPath.endsWith('/')) urlPath += 'index.html';
     let filePath = path.join(ROOT, urlPath);
     if (!filePath.startsWith(ROOT)) {

@@ -6,15 +6,15 @@
       <p>{{ site.siteTagline }}. Datos de partidos y estadisticas via balldontlie.io. Cuotas via The Odds API. Noticias agregadas con enlace a la fuente original.</p>
     </div>
     <div>
-      <a href="/estadisticas/">Estadisticas</a>
-      <a href="/cuotas/">Cuotas</a>
-      <a href="/noticias/">Noticias</a>
-      <a href="/equipos/">Equipos</a>
-      <a href="/jugadores/">Jugadores</a>
+      <a href="{{ site.basePath }}/estadisticas/">Estadisticas</a>
+      <a href="{{ site.basePath }}/cuotas/">Cuotas</a>
+      <a href="{{ site.basePath }}/noticias/">Noticias</a>
+      <a href="{{ site.basePath }}/equipos/">Equipos</a>
+      <a href="{{ site.basePath }}/jugadores/">Jugadores</a>
     </div>
     <div>
       <p>© {{ currentYear }} {{ site.siteName }}. Sitio no afiliado a la NBA.</p>
     </div>
   </div>
 </footer>
-<script src="/js/main.js"></script>
+<script src="{{ site.basePath }}/js/main.js"></script>

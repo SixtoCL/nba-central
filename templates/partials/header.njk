@@ -1,13 +1,13 @@
 <header class="site-header">
   <div class="container site-header-bar">
-    <a class="brand" href="/">NBA<span class="dot">●</span>Central</a>
+    <a class="brand" href="{{ site.basePath }}/">NBA<span class="dot">●</span>Central</a>
     <nav class="main-nav" aria-label="Navegacion principal">
-      <a href="/" class="{{ 'active' if nav == 'home' }}">Portada</a>
-      <a href="/noticias/" class="{{ 'active' if nav == 'noticias' }}">Noticias</a>
-      <a href="/equipos/" class="{{ 'active' if nav == 'equipos' }}">Equipos</a>
-      <a href="/jugadores/" class="{{ 'active' if nav == 'jugadores' }}">Jugadores</a>
-      <a href="/estadisticas/" class="{{ 'active' if nav == 'estadisticas' }}">Estadisticas</a>
-      <a href="/cuotas/" class="{{ 'active' if nav == 'cuotas' }}">Cuotas</a>
+      <a href="{{ site.basePath }}/" class="{{ 'active' if nav == 'home' }}">Portada</a>
+      <a href="{{ site.basePath }}/noticias/" class="{{ 'active' if nav == 'noticias' }}">Noticias</a>
+      <a href="{{ site.basePath }}/equipos/" class="{{ 'active' if nav == 'equipos' }}">Equipos</a>
+      <a href="{{ site.basePath }}/jugadores/" class="{{ 'active' if nav == 'jugadores' }}">Jugadores</a>
+      <a href="{{ site.basePath }}/estadisticas/" class="{{ 'active' if nav == 'estadisticas' }}">Estadisticas</a>
+      <a href="{{ site.basePath }}/cuotas/" class="{{ 'active' if nav == 'cuotas' }}">Cuotas</a>
     </nav>
     <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false"><span></span></button>
   </div>
@@ -15,12 +15,12 @@
 
 <div class="nav-mobile-overlay" data-nav-overlay data-open="false">
   <div class="nav-mobile-list">
-    <a href="/">Portada</a>
-    <a href="/noticias/">Noticias</a>
-    <a href="/equipos/">Equipos</a>
-    <a href="/jugadores/">Jugadores</a>
-    <a href="/estadisticas/">Estadisticas</a>
-    <a href="/cuotas/">Cuotas</a>
+    <a href="{{ site.basePath }}/">Portada</a>
+    <a href="{{ site.basePath }}/noticias/">Noticias</a>
+    <a href="{{ site.basePath }}/equipos/">Equipos</a>
+    <a href="{{ site.basePath }}/jugadores/">Jugadores</a>
+    <a href="{{ site.basePath }}/estadisticas/">Estadisticas</a>
+    <a href="{{ site.basePath }}/cuotas/">Cuotas</a>
   </div>
 </div>
 
@@ -28,7 +28,7 @@
   <div class="ticker-track" data-ticker-track>
     {% if todaysGames and todaysGames.length %}
       {% for g in todaysGames %}
-      <a class="ticker-game" href="/partidos/{{ g.date }}/{{ g.id }}.html">
+      <a class="ticker-game" href="{{ site.basePath }}/partidos/{{ g.date }}/{{ g.id }}.html">
         <span class="status">{{ g.status }}</span>
         <span class="ticker-row"><span>{{ g.visitor_team.abbreviation }}</span><strong>{{ g.visitor_team_score }}</strong></span>
         <span class="ticker-row"><span>{{ g.home_team.abbreviation }}</span><strong>{{ g.home_team_score }}</strong></span>

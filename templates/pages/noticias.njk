@@ -26,7 +26,7 @@
       <div class="section-title">Clasificación (top 5)</div>
       <ul class="widget-list">
         {% for row in standingsPreview %}
-        <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
+        <li><span class="rank">{{ row.conference_rank }}</span> <a href="{{ site.basePath }}/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
         {% endfor %}
       </ul>
     </div>

@@ -28,7 +28,7 @@
       <tbody>
         {% for s in awayStats %}
         <tr>
-          <td><a href="/jugadores/{{ s.playerSlug }}/index.html">{{ s.player.first_name }} {{ s.player.last_name }}</a></td>
+          <td><a href="{{ site.basePath }}/jugadores/{{ s.playerSlug }}/index.html">{{ s.player.first_name }} {{ s.player.last_name }}</a></td>
           <td>{{ s.min }}</td><td>{{ s.pts }}</td><td>{{ s.reb }}</td><td>{{ s.ast }}</td><td>{{ s.stl }}</td><td>{{ s.blk }}</td>
           <td>{{ s.fgm }}/{{ s.fga }}</td><td>{{ s.fg3m }}/{{ s.fg3a }}</td><td>{{ s.ftm }}/{{ s.fta }}</td><td>{{ s.plus_minus }}</td>
         </tr>
@@ -46,7 +46,7 @@
       <tbody>
         {% for s in homeStats %}
         <tr>
-          <td><a href="/jugadores/{{ s.playerSlug }}/index.html">{{ s.player.first_name }} {{ s.player.last_name }}</a></td>
+          <td><a href="{{ site.basePath }}/jugadores/{{ s.playerSlug }}/index.html">{{ s.player.first_name }} {{ s.player.last_name }}</a></td>
           <td>{{ s.min }}</td><td>{{ s.pts }}</td><td>{{ s.reb }}</td><td>{{ s.ast }}</td><td>{{ s.stl }}</td><td>{{ s.blk }}</td>
           <td>{{ s.fgm }}/{{ s.fga }}</td><td>{{ s.fg3m }}/{{ s.fg3a }}</td><td>{{ s.ftm }}/{{ s.fta }}</td><td>{{ s.plus_minus }}</td>
         </tr>

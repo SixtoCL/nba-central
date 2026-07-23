@@ -1,7 +1,8 @@
 {
   "siteName": "NBA Central",
   "siteTagline": "Noticias, estadisticas y cuotas de la NBA",
-  "siteUrl": "https://nba-central.example.com",
+  "siteUrl": "https://sixtocl.github.io",
+  "basePath": "/nba-central",
   "locale": "es-ES",
   "currentSeason": 2025,
   "lastNSeasons": 5,
