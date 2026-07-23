@@ -1,14 +1,19 @@
 {% extends "layout.njk" %}
 {% import "partials/macros.njk" as m %}
 {% block content %}
+<div class="page-hero" data-reveal>
+  <span class="badge">Apuestas</span>
+  <h1>Cuotas NBA</h1>
+  <div class="entity-meta">Ganador, hándicap y total de puntos por partido, comparadas entre varias casas.</div>
+</div>
+
 <div class="card">
   {% if sample %}<div class="sample-banner">Cuotas de muestra: activa el plan Professional de The Odds API para ver cuotas reales.</div>{% endif %}
-  <div class="section-title">Cuotas NBA</div>
   <div class="odds-disclaimer">Las cuotas mostradas son orientativas y cambian constantemente: comprueba siempre la cuota real en la casa de apuestas antes de apostar. {{ site.responsibleGambling.text }}</div>
 
   {% if oddsData and oddsData.length %}
     {% for g in oddsData %}
-    <div class="odds-game">
+    <div class="odds-game" data-reveal>
       <h3>{{ g.away_team }} @ {{ g.home_team }} {% if g.game_id %}· <a href="/partidos/{{ g.date }}/{{ g.game_id }}.html">ficha del partido</a>{% endif %}</h3>
       {% for b in g.bookmakers %}
       <div class="odds-book-row">

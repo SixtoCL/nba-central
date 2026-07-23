@@ -1,16 +1,35 @@
 {% extends "layout.njk" %}
 {% import "partials/macros.njk" as m %}
 {% block content %}
+<section class="hero">
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">NBA Central</p>
+    <h1 class="hero-title">Toda la <span>actualidad de la NBA</span>, en un solo sitio.</h1>
+    <p class="hero-sub">Noticias del día, estadísticas de las últimas {{ seasonsCount }} temporadas de cada equipo y jugador, y cuotas de apuestas actualizadas para cada partido.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/noticias/">Ver noticias</a>
+      <a class="btn btn-ghost" href="/cuotas/">Ver cuotas de hoy</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat" data-reveal><strong data-count-to="{{ teamsCount }}">0</strong><span>Equipos</span></div>
+      <div class="hero-stat" data-reveal><strong data-count-to="{{ playersCount }}">0</strong><span>Jugadores</span></div>
+      <div class="hero-stat" data-reveal><strong data-count-to="{{ seasonsCount }}">0</strong><span>Temporadas</span></div>
+      <div class="hero-stat" data-reveal><strong data-count-to="{{ newsCount }}">0</strong><span>Noticias hoy</span></div>
+    </div>
+  </div>
+</section>
+
 <div class="page-layout">
   <div>
     <div class="card">
       <div class="section-title">Noticias destacadas</div>
       <div class="hero-news">
         {% if news and news.length %}
-          {{ m.newsCard(news[0], true) }}
+          <div data-reveal>{{ m.newsCard(news[0], true) }}</div>
           <div>
             {% for item in newsSecondary %}
-              {{ m.newsCard(item) }}
+              <div data-reveal>{{ m.newsCard(item) }}</div>
             {% endfor %}
           </div>
         {% else %}
@@ -24,7 +43,7 @@
     <div class="card">
       <div class="section-title">Más noticias</div>
       {% for item in newsMore %}
-        {{ m.newsCard(item) }}
+        <div data-reveal>{{ m.newsCard(item) }}</div>
       {% endfor %}
     </div>
   </div>
@@ -32,27 +51,27 @@
   <aside>
     {{ m.adSlot(site, "sidebar", "Publicidad") }}
 
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Líderes de la liga ({{ meta.currentSeason }}-{{ (meta.currentSeason + 1) % 100 }})</div>
       <ul class="widget-list">
         {% for row in topScorers %}
         <li><span class="rank">{{ loop.index }}</span> <a href="/jugadores/{{ row.player.slug }}/index.html">{{ row.player.full_name }}</a> <span>{{ row.value }} pts</span></li>
         {% endfor %}
       </ul>
-      <div style="padding:10px 16px"><a href="/estadisticas/">Ver todas las estadísticas →</a></div>
+      <div style="padding:10px 20px"><a href="/estadisticas/" class="read-more" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver todas las estadísticas →</a></div>
     </div>
 
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Clasificación (top 5)</div>
       <ul class="widget-list">
         {% for row in standingsPreview %}
         <li><span class="rank">{{ row.conference_rank }}</span> <a href="/equipos/{{ row.team.slug }}/index.html">{{ row.team.full_name }}</a> <span>{{ row.wins }}-{{ row.losses }}</span></li>
         {% endfor %}
       </ul>
-      <div style="padding:10px 16px"><a href="/estadisticas/">Ver clasificación completa →</a></div>
+      <div style="padding:10px 20px"><a href="/estadisticas/" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver clasificación completa →</a></div>
     </div>
 
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Cuotas de hoy</div>
       {% if oddsPreview and oddsPreview.length %}
         {% for g in oddsPreview %}
@@ -69,9 +88,9 @@
         </div>
         {% endfor %}
       {% else %}
-        <p style="padding:12px 16px; font-size:0.85rem; color:var(--ink-soft)">No hay partidos con cuotas disponibles hoy.</p>
+        <p style="padding:12px 20px; font-size:0.85rem; color:var(--ink-3)">No hay partidos con cuotas disponibles hoy.</p>
       {% endif %}
-      <div style="padding:10px 16px"><a href="/cuotas/">Ver todas las cuotas →</a></div>
+      <div style="padding:10px 20px"><a href="/cuotas/" style="color:var(--blue); font-family:var(--display); text-transform:uppercase; font-size:.85rem;">Ver todas las cuotas →</a></div>
     </div>
 
     {{ m.adSlot(site, "sidebar", "Publicidad") }}

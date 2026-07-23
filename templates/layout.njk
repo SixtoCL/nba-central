@@ -4,9 +4,16 @@
 {% include "partials/head-meta.njk" %}
 </head>
 <body>
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+<div class="cursor" data-cursor-root aria-hidden="true">
+  <span class="cursor-dot"></span>
+  <span class="cursor-ring"></span>
+</div>
+
 {% include "partials/header.njk" %}
 
-<main class="container">
+<main class="container" id="contenido">
   {% block content %}{% endblock %}
 </main>
 

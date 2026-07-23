@@ -1,19 +1,17 @@
 {% extends "layout.njk" %}
 {% import "partials/macros.njk" as m %}
 {% block content %}
-<div class="entity-header">
-  <div>
-    <span class="badge">{{ team.conference }} · {{ team.division }}</span>
-    <h1>{{ team.full_name }}</h1>
-    <div class="entity-meta">
-      {% if standing %}Temporada {{ meta.currentSeason }}: {{ standing.wins }}-{{ standing.losses }} · Conferencia #{{ standing.conference_rank }}{% else %}Sin datos de clasificación todavía{% endif %}
-    </div>
+<div class="page-hero" data-reveal>
+  <span class="badge">{{ team.conference }} · {{ team.division }}</span>
+  <h1>{{ team.full_name }}</h1>
+  <div class="entity-meta">
+    {% if standing %}Temporada {{ meta.currentSeason }}: {{ standing.wins }}-{{ standing.losses }} · Conferencia #{{ standing.conference_rank }}{% else %}Sin datos de clasificación todavía{% endif %}
   </div>
 </div>
 
 {{ m.adSlot(site, "inContent", "Publicidad") }}
 
-<div class="card">
+<div class="card" data-reveal>
   <div class="section-title">Últimas {{ seasonHistory.length }} temporadas</div>
   <div class="table-scroll">
     <table class="stat-table">
@@ -27,7 +25,7 @@
   </div>
 </div>
 
-<div class="card">
+<div class="card" data-reveal>
   <div class="section-title">Plantilla</div>
   <div class="table-scroll">
     <table class="stat-table">
@@ -41,7 +39,7 @@
   </div>
 </div>
 
-<div class="card">
+<div class="card" data-reveal>
   <div class="section-title">Últimos partidos</div>
   <ul class="widget-list">
     {% for g in recentGames %}

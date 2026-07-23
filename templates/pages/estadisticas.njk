@@ -1,8 +1,13 @@
 {% extends "layout.njk" %}
 {% import "partials/macros.njk" as m %}
 {% block content %}
+<div class="page-hero" data-reveal>
+  <span class="badge">Estadísticas</span>
+  <h1>Temporada {{ season }}-{{ (season + 1) % 100 }}</h1>
+  <div class="entity-meta">Líderes de la liga y clasificación por conferencia.</div>
+</div>
+
 <div class="card">
-  <div class="section-title">Estadísticas · Temporada {{ season }}-{{ (season + 1) % 100 }}</div>
   <div class="season-tabs">
     {% for s in seasons %}
       <a href="{{ '/estadisticas/index.html' if s == meta.currentSeason else '/estadisticas/temporada-' + s|string + '/index.html' }}" class="{{ 'active' if s == season }}">{{ s }}-{{ (s + 1) % 100 }}</a>
@@ -13,7 +18,7 @@
 <div class="page-layout">
   <div>
     {% for statLabel, rows in leadersByStat %}
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Líderes · {{ statLabel }}</div>
       <ul class="widget-list">
         {% for row in rows %}
@@ -25,7 +30,7 @@
   </div>
   <aside>
     {{ m.adSlot(site, "sidebar", "Publicidad") }}
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Este</div>
       <ul class="widget-list">
         {% for row in standingsEast %}
@@ -33,7 +38,7 @@
         {% endfor %}
       </ul>
     </div>
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Oeste</div>
       <ul class="widget-list">
         {% for row in standingsWest %}

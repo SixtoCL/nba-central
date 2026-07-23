@@ -1,12 +1,17 @@
 {% extends "layout.njk" %}
 {% import "partials/macros.njk" as m %}
 {% block content %}
+<div class="page-hero" data-reveal>
+  <span class="badge">Actualidad</span>
+  <h1>Noticias NBA</h1>
+  <div class="entity-meta">Titulares del día, agregados de varias fuentes con enlace directo al artículo original.</div>
+</div>
+
 <div class="page-layout">
   <div class="card news-list-page">
-    <div class="section-title">Noticias NBA</div>
     {% if news and news.length %}
       {% for item in news %}
-        {{ m.newsCard(item) }}
+        <div data-reveal>{{ m.newsCard(item) }}</div>
         {% if loop.index == 3 %}
           {{ m.adSlot(site, "inContent", "Publicidad") }}
         {% endif %}
@@ -17,7 +22,7 @@
   </div>
   <aside>
     {{ m.adSlot(site, "sidebar", "Publicidad") }}
-    <div class="card widget">
+    <div class="card widget" data-reveal>
       <div class="section-title">Clasificación (top 5)</div>
       <ul class="widget-list">
         {% for row in standingsPreview %}

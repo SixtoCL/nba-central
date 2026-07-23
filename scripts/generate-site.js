@@ -107,6 +107,10 @@ async function main() {
       topScorers,
       standingsPreview: standingsResolved.slice(0, 5),
       oddsPreview,
+      teamsCount: teams.length,
+      playersCount: players.length,
+      seasonsCount: meta.seasons.length,
+      newsCount: news.length,
       lastmod: meta.generatedAt,
     },
     'index.html'

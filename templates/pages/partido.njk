@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 {% import "partials/macros.njk" as m %}
 {% block content %}
-<div class="card">
+<div class="card" data-reveal>
   {% if sample %}<div class="sample-banner">Estadisticas de muestra para este partido (pendiente de activar el plan de pago).</div>{% endif %}
   <div class="eyebrow">{{ game.date }} · {{ 'Playoffs' if game.postseason else 'Temporada regular' }}</div>
   <div class="scoreboard">
@@ -20,7 +20,7 @@
 
 {{ m.adSlot(site, "inContent", "Publicidad") }}
 
-<div class="card">
+<div class="card" data-reveal>
   <div class="section-title">{{ game.visitor_team.full_name }} · Estadísticas</div>
   <div class="table-scroll">
     <table class="stat-table">
@@ -38,7 +38,7 @@
   </div>
 </div>
 
-<div class="card">
+<div class="card" data-reveal>
   <div class="section-title">{{ game.home_team.full_name }} · Estadísticas</div>
   <div class="table-scroll">
     <table class="stat-table">

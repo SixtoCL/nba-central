@@ -1,310 +1,386 @@
+/* =============================================================
+   1. Tokens
+   ============================================================= */
+@property --mesh-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@property --mesh-x     { syntax: "<percentage>"; inherits: false; initial-value: 50%; }
+@property --mesh-y     { syntax: "<percentage>"; inherits: false; initial-value: 50%; }
+
 :root {
-  --nba-red: #c8102e;
-  --nba-blue: #1d428a;
-  --nba-blue-dark: #0f2a5c;
-  --ink: #101418;
-  --ink-soft: #4b5563;
-  --paper: #ffffff;
-  --paper-soft: #f4f6fa;
-  --line: #e2e6ee;
-  --win: #1a7f37;
-  --loss: #c8102e;
-  --radius: 10px;
-  --shadow: 0 1px 3px rgba(16, 20, 24, 0.08), 0 1px 2px rgba(16, 20, 24, 0.06);
-  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --bg:      #0A0F1C;
+  --bg-2:    #0E1526;
+  --bg-3:    #16213A;
+  --ink:     #F4F6FB;
+  --ink-2:   #C3CBDB;
+  --ink-3:   #7C88A0;
+  --blue:    #3E7BFA;
+  --blue-2:  #2657D6;
+  --red:     #E4123A;
+  --red-2:   #B80E2E;
+  --line:    rgba(244,246,251,.12);
+  --win:     #2FBF71;
+  --loss:    #E4123A;
+  --radius:  18px;
+
+  --display: "Oswald", "Arial Narrow", sans-serif;
+  --sans:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --shadow: 0 30px 80px -30px rgba(0,0,0,.65), 0 1px 0 rgba(255,255,255,.03) inset;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #eef1f6;
-    --ink-soft: #b7c0cc;
-    --paper: #10151d;
-    --paper-soft: #161d27;
-    --line: #253040;
-  }
-}
-
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+/* =============================================================
+   2. Reset & base
+   ============================================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; scroll-behavior: smooth; }
 body {
-  font-family: var(--font-body);
-  background: var(--paper-soft);
+  background: var(--bg);
   color: var(--ink);
-  line-height: 1.5;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
+img, svg { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
 a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-.container { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.05; letter-spacing: -0.01em; font-family: var(--display); font-weight: 600; text-transform: uppercase; }
+::selection { background: var(--blue); color: #fff; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
 
-/* ---------- Header ---------- */
+.container { max-width: 1180px; margin-inline: auto; padding-inline: 1.25rem; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--display);
+  font-size: .78rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--red); font-weight: 600;
+}
+.eyebrow::before { content: ""; width: 22px; height: 2px; background: var(--red); }
+
+.skip-link {
+  position: fixed; top: -100px; left: 1rem; padding: .6rem 1rem;
+  background: var(--ink); color: var(--bg); z-index: 9999; border-radius: 8px; font-weight: 600;
+  transition: top .3s var(--ease-out);
+}
+.skip-link:focus { top: 1rem; }
+
+/* =============================================================
+   3. Buttons
+   ============================================================= */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .85rem 1.6rem; border-radius: 999px;
+  font-family: var(--display); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(0,0,0,.3);
+  transition: transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft);
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-3px); }
+.btn-primary { background: linear-gradient(135deg, var(--blue), var(--blue-2)); color: #fff; }
+.btn-primary:hover { box-shadow: 0 20px 46px rgba(62,123,250,.35); }
+.btn-ghost { background: rgba(244,246,251,.06); color: var(--ink); border: 1px solid var(--line); }
+.btn-ghost:hover { background: rgba(244,246,251,.1); }
+
+/* =============================================================
+   4. Nav
+   ============================================================= */
 .site-header {
-  background: var(--nba-blue);
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  box-shadow: var(--shadow);
+  position: sticky; top: 0; z-index: 100;
+  background: transparent;
+  transition: background-color .4s var(--ease-out), backdrop-filter .4s var(--ease-out), box-shadow .4s var(--ease-out);
 }
-.site-header-bar {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 12px 16px;
+.site-header.is-scrolled {
+  background: rgba(10,15,28,.82);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  box-shadow: 0 1px 0 var(--line);
 }
+.site-header-bar { display: flex; align-items: center; gap: 24px; padding: 14px 16px; }
 .brand {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap;
+  font-family: var(--display); font-size: 1.4rem; letter-spacing: .02em; text-transform: uppercase;
+  color: var(--ink); display: flex; align-items: center; gap: 6px; white-space: nowrap;
 }
-.brand .dot { color: var(--nba-red); }
-.main-nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.brand .dot { color: var(--red); }
+.main-nav { display: none; gap: 4px; flex-wrap: wrap; margin-left: auto; }
 .main-nav a {
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  opacity: 0.9;
+  position: relative; color: var(--ink-2); padding: 8px 14px; font-size: .85rem;
+  font-family: var(--display); letter-spacing: .04em; text-transform: uppercase;
 }
-.main-nav a:hover, .main-nav a.active { background: rgba(255, 255, 255, 0.14); opacity: 1; }
+.main-nav a::after {
+  content: ""; position: absolute; left: 14px; right: 14px; bottom: 4px; height: 2px;
+  background: var(--red); transform: scaleX(0); transform-origin: right;
+  transition: transform .4s var(--ease-out);
+}
+.main-nav a:hover, .main-nav a.active { color: var(--ink); }
+.main-nav a:hover::after, .main-nav a.active::after { transform: scaleX(1); transform-origin: left; }
+
 .nav-toggle {
-  display: none;
-  margin-left: auto;
-  background: none;
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 6px;
-  color: #fff;
-  font-size: 1.1rem;
-  padding: 4px 10px;
-  cursor: pointer;
+  margin-left: auto; display: grid; place-items: center; width: 42px; height: 42px;
+  border-radius: 50%; border: 1px solid var(--line); position: relative;
 }
-@media (max-width: 760px) {
-  .nav-toggle { display: block; }
-  .main-nav { display: none; width: 100%; flex-direction: column; gap: 0; }
-  .main-nav.open { display: flex; }
-  .main-nav a { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0; }
-  .site-header-bar { flex-wrap: wrap; }
+.nav-toggle span, .nav-toggle::before, .nav-toggle::after {
+  content: ""; display: block; width: 18px; height: 1.5px; background: var(--ink);
+  position: relative; transition: transform .3s, opacity .3s;
 }
+.nav-toggle::before { position: absolute; transform: translateY(-6px); }
+.nav-toggle::after { position: absolute; transform: translateY(6px); }
+.nav-toggle.is-open span { opacity: 0; }
+.nav-toggle.is-open::before { transform: rotate(45deg); }
+.nav-toggle.is-open::after { transform: rotate(-45deg); }
 
-/* ---------- Scores ticker ---------- */
-.ticker {
-  background: var(--ink);
-  color: #fff;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: thin;
+.nav-mobile-overlay {
+  position: fixed; inset: 0; z-index: 95; background: var(--bg);
+  display: grid; place-items: center;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path .6s var(--ease-soft);
 }
-.ticker-inner { display: inline-flex; gap: 0; padding: 0 8px; }
+.nav-mobile-overlay[data-open="true"] { clip-path: inset(0); }
+.nav-mobile-overlay .nav-mobile-list { display: flex; flex-direction: column; align-items: center; gap: 1.6rem; }
+.nav-mobile-overlay a { font-family: var(--display); font-size: 1.8rem; text-transform: uppercase; color: var(--ink); }
+
+/* =============================================================
+   5. Marquee ticker (scores)
+   ============================================================= */
+.ticker { background: var(--bg-2); border-bottom: 1px solid var(--line); overflow: hidden; position: relative; }
+.ticker::before, .ticker::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2; pointer-events: none;
+}
+.ticker::before { left: 0; background: linear-gradient(90deg, var(--bg-2), transparent); }
+.ticker::after  { right: 0; background: linear-gradient(270deg, var(--bg-2), transparent); }
+.ticker-track { display: inline-flex; white-space: nowrap; will-change: transform; }
+.ticker-track.is-looping { animation: tickerScroll 42s linear infinite; }
+.ticker-track.is-looping:hover { animation-play-state: paused; }
+@keyframes tickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .ticker-game {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 8px 16px;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  font-size: 0.82rem;
-  min-width: 150px;
+  display: inline-flex; flex-direction: column; gap: 3px;
+  padding: 10px 20px; border-right: 1px solid var(--line); font-size: .82rem; min-width: 160px;
 }
-.ticker-game .status { color: var(--nba-red); font-weight: 700; font-size: 0.7rem; text-transform: uppercase; }
-.ticker-row { display: flex; justify-content: space-between; gap: 12px; }
-.ticker-empty { padding: 10px 16px; font-size: 0.85rem; opacity: 0.75; }
+.ticker-game .status { color: var(--red); font-weight: 700; font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; }
+.ticker-row { display: flex; justify-content: space-between; gap: 12px; color: var(--ink-2); }
+.ticker-row strong { color: var(--ink); }
+.ticker-empty { display: inline-block; padding: 12px 20px; font-size: .85rem; color: var(--ink-3); }
 
-/* ---------- Sample data banner ---------- */
+/* =============================================================
+   6. Sample banner
+   ============================================================= */
 .sample-banner {
-  background: #fff4d6;
-  color: #7a5b00;
-  border-bottom: 1px solid #f0d896;
-  padding: 8px 16px;
-  font-size: 0.85rem;
-  text-align: center;
+  background: linear-gradient(90deg, rgba(228,18,58,.12), rgba(62,123,250,.12));
+  color: var(--ink-2); border-bottom: 1px solid var(--line);
+  padding: 10px 16px; font-size: .82rem; text-align: center;
 }
 
-/* ---------- Layout ---------- */
-.page-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 24px;
-  padding: 24px 0 48px;
+/* =============================================================
+   7. Home hero
+   ============================================================= */
+.hero {
+  position: relative; overflow: hidden; isolation: isolate;
+  padding-block: 4.5rem 3.5rem;
 }
-@media (max-width: 900px) {
-  .page-layout { grid-template-columns: 1fr; }
+.hero-mesh {
+  position: absolute; inset: -20%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(55% 45% at var(--mesh-x) var(--mesh-y), rgba(62,123,250,.32), transparent 62%),
+    conic-gradient(from var(--mesh-angle), rgba(228,18,58,.16), rgba(62,123,250,.14), rgba(228,18,58,.1), rgba(62,123,250,.16));
+  filter: blur(90px) saturate(130%);
+  opacity: .85;
+  animation: meshShift 26s linear infinite;
+  mix-blend-mode: screen;
 }
+@keyframes meshShift {
+  0%   { --mesh-angle: 0deg;   --mesh-x: 20%; --mesh-y: 30%; }
+  50%  { --mesh-angle: 180deg; --mesh-x: 78%; --mesh-y: 55%; }
+  100% { --mesh-angle: 360deg; --mesh-x: 20%; --mesh-y: 30%; }
+}
+.hero-inner { max-width: 760px; }
+.hero-title {
+  font-size: clamp(2.4rem, 6vw, 4.4rem); color: var(--ink); max-width: 16ch; margin-top: 1rem;
+}
+.hero-title span { color: var(--blue); }
+.hero-sub { margin-top: 1.2rem; font-size: 1.08rem; color: var(--ink-2); max-width: 48ch; line-height: 1.6; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
+.hero-stats { display: flex; flex-wrap: wrap; gap: 2.4rem; margin-top: 2.6rem; }
+.hero-stat strong { display: block; font-family: var(--display); font-size: 2.2rem; color: var(--blue); }
+.hero-stat span { font-size: .8rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; }
+
+/* =============================================================
+   8. Page hero (team / player / section pages)
+   ============================================================= */
+.page-hero {
+  position: relative; overflow: hidden; isolation: isolate;
+  background: linear-gradient(120deg, var(--bg-3), var(--bg-2));
+  border-radius: var(--radius); border: 1px solid var(--line);
+  padding: 28px 24px; margin-top: 24px;
+}
+.page-hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(60% 100% at 100% 0%, rgba(228,18,58,.16), transparent 60%);
+}
+.page-hero .badge {
+  display: inline-block; background: var(--red); color: #fff; padding: 3px 10px; border-radius: 999px;
+  font-family: var(--display); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase;
+}
+.page-hero h1 { margin: 10px 0 6px; font-size: clamp(1.6rem, 3.4vw, 2.4rem); color: var(--ink); }
+.page-hero .entity-meta { color: var(--ink-2); font-size: .92rem; }
+
+/* =============================================================
+   9. Layout & cards
+   ============================================================= */
+.page-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; padding: 24px 0 56px; }
+@media (max-width: 900px) { .page-layout { grid-template-columns: 1fr; } }
+
 .card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: var(--bg-3); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); margin-bottom: 20px;
 }
 .section-title {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 1.05rem;
-  padding: 12px 16px;
-  border-bottom: 3px solid var(--nba-red);
-  color: var(--nba-blue);
+  font-family: var(--display); text-transform: uppercase; letter-spacing: .04em; font-size: 1rem;
+  padding: 16px 20px; border-bottom: 1px solid var(--line); color: var(--ink);
+  display: flex; align-items: center; gap: 10px;
 }
+.section-title::before { content: ""; width: 20px; height: 3px; background: var(--red); border-radius: 2px; }
 
 /* ---------- News ---------- */
-.hero-news {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 16px;
-  padding: 16px;
-}
+.hero-news { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; padding: 16px; }
 @media (max-width: 700px) { .hero-news { grid-template-columns: 1fr; } }
+
 .news-card {
-  display: block;
-  padding: 14px 16px;
-  border-bottom: 1px solid var(--line);
+  position: relative; display: block; padding: 18px 20px; border-bottom: 1px solid var(--line);
+  isolation: isolate; transition: background-color .3s;
 }
 .news-card:last-child { border-bottom: none; }
-.news-card .source {
-  color: var(--nba-red);
-  font-weight: 700;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
+.news-card::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), rgba(62,123,250,.14), transparent 60%);
+  opacity: 0; transition: opacity .35s;
 }
-.news-card h3 { margin: 4px 0 6px; font-size: 1.05rem; line-height: 1.3; }
-.news-card p { margin: 0 0 6px; color: var(--ink-soft); font-size: 0.92rem; }
-.news-card .read-more { color: var(--nba-blue); font-weight: 600; font-size: 0.85rem; }
-.news-card.featured h3 { font-size: 1.4rem; }
-.news-list-page .news-card { padding: 18px 20px; }
+.news-card:hover::before { opacity: 1; }
+.news-card .source { color: var(--red); font-weight: 700; font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
+.news-card h3 { margin: 6px 0 8px; font-size: 1.05rem; line-height: 1.3; text-transform: none; font-family: var(--sans); font-weight: 700; }
+.news-card p { margin: 0 0 8px; color: var(--ink-2); font-size: .92rem; }
+.news-card .read-more { color: var(--blue); font-weight: 600; font-size: .85rem; font-family: var(--display); text-transform: uppercase; letter-spacing: .03em; }
+.news-card.featured h3 { font-size: 1.5rem; }
+.news-list-page .news-card { padding: 22px 24px; }
 
 /* ---------- Ad slots ---------- */
 .ad-slot {
-  background: var(--paper);
-  border: 1px dashed var(--line);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink-soft);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  min-height: 90px;
-  padding: 8px;
-  margin: 16px 0;
+  background: var(--bg-3); border: 1px dashed var(--line); border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center; color: var(--ink-3);
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .06em;
+  min-height: 90px; padding: 8px; margin: 16px 0;
 }
 
-/* ---------- Sidebar widgets ---------- */
-.widget { margin-bottom: 20px; }
+/* ---------- Widgets ---------- */
 .widget-list { list-style: none; margin: 0; padding: 0; }
 .widget-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 8px 16px;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
+  display: flex; justify-content: space-between; gap: 8px; padding: 10px 20px;
+  border-bottom: 1px solid var(--line); font-size: .9rem; color: var(--ink-2);
 }
 .widget-list li:last-child { border-bottom: none; }
-.widget-list .rank { color: var(--nba-red); font-weight: 700; width: 1.4em; }
+.widget-list a { color: var(--ink); font-weight: 600; }
+.widget-list a:hover { color: var(--blue); }
+.widget-list .rank { color: var(--red); font-weight: 700; width: 1.4em; font-family: var(--display); }
 
 /* ---------- Tables ---------- */
 .table-scroll { overflow-x: auto; }
-table.stat-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 560px; }
-table.stat-table th, table.stat-table td { padding: 8px 10px; text-align: right; white-space: nowrap; }
-table.stat-table th:first-child, table.stat-table td:first-child { text-align: left; position: sticky; left: 0; background: var(--paper); }
-table.stat-table thead th { background: var(--nba-blue); color: #fff; font-family: var(--font-display); font-weight: 500; letter-spacing: 0.3px; }
-table.stat-table tbody tr:nth-child(even) { background: var(--paper-soft); }
-table.stat-table tbody tr:hover { background: #eef2fb; }
-
-/* ---------- Team / player headers ---------- */
-.entity-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 20px 16px;
-  background: linear-gradient(120deg, var(--nba-blue), var(--nba-blue-dark));
-  color: #fff;
-  border-radius: var(--radius);
+table.stat-table { width: 100%; border-collapse: collapse; font-size: .86rem; min-width: 560px; }
+table.stat-table th, table.stat-table td { padding: 10px 12px; text-align: right; white-space: nowrap; color: var(--ink-2); }
+table.stat-table th:first-child, table.stat-table td:first-child { text-align: left; position: sticky; left: 0; background: var(--bg-3); color: var(--ink); }
+table.stat-table thead th {
+  background: var(--bg-2); color: var(--ink); font-family: var(--display); font-weight: 500;
+  letter-spacing: .03em; text-transform: uppercase; font-size: .74rem; border-bottom: 1px solid var(--line);
 }
-.entity-header .badge { background: var(--nba-red); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
-.entity-header h1 { margin: 4px 0; font-family: var(--font-display); font-size: 1.8rem; }
-.entity-meta { color: rgba(255,255,255,0.85); font-size: 0.9rem; }
+table.stat-table tbody tr { border-bottom: 1px solid var(--line); transition: background-color .25s; }
+table.stat-table tbody tr:hover { background: rgba(62,123,250,.08); }
+table.stat-table tbody tr:hover td:first-child { background: rgba(62,123,250,.08); }
+table.stat-table td a { color: var(--ink); font-weight: 600; }
+table.stat-table td a:hover { color: var(--blue); }
 
-/* ---------- Game page ---------- */
-.scoreboard {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 16px;
-  padding: 24px 16px;
-  text-align: center;
-}
-.scoreboard .team { font-family: var(--font-display); }
-.scoreboard .team .score { font-size: 2.6rem; font-weight: 700; }
+/* ---------- Game / scoreboard ---------- */
+.scoreboard { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding: 28px 20px; text-align: center; }
+.scoreboard .team { font-family: var(--display); text-transform: uppercase; font-size: .95rem; color: var(--ink-2); }
+.scoreboard .team .score { font-size: 2.8rem; font-weight: 600; color: var(--ink); }
 .scoreboard .team.winner .score { color: var(--win); }
-.scoreboard .vs { font-size: 0.85rem; color: var(--ink-soft); }
-.recap-text { padding: 4px 16px 20px; font-size: 1rem; color: var(--ink); }
+.scoreboard .vs { font-size: .8rem; color: var(--ink-3); font-family: var(--display); }
+.recap-text { padding: 4px 20px 24px; font-size: 1rem; color: var(--ink-2); line-height: 1.7; }
 
-/* ---------- Odds page ---------- */
+/* ---------- Odds ---------- */
 .odds-disclaimer {
-  background: #eaf0fd;
-  border: 1px solid #c7d7fb;
-  border-radius: var(--radius);
-  padding: 12px 16px;
-  font-size: 0.85rem;
-  color: var(--nba-blue-dark);
-  margin-bottom: 16px;
+  background: rgba(62,123,250,.08); border: 1px solid rgba(62,123,250,.25); border-radius: var(--radius);
+  padding: 14px 18px; font-size: .85rem; color: var(--ink-2); margin: 16px;
 }
-.odds-game { border-bottom: 1px solid var(--line); padding: 14px 16px; }
-.odds-game h3 { margin: 0 0 8px; font-size: 1rem; }
-.odds-book-row { display: flex; justify-content: space-between; gap: 8px; padding: 6px 0; font-size: 0.88rem; }
-.odds-book-row .book { font-weight: 600; }
-.odds-price { display: inline-flex; gap: 10px; }
-.odds-price span { background: var(--paper-soft); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; min-width: 3.2em; text-align: center; }
+.odds-game { border-bottom: 1px solid var(--line); padding: 18px 20px; }
+.odds-game h3 { text-transform: none; font-family: var(--sans); font-weight: 700; margin: 0 0 10px; font-size: 1rem; color: var(--ink); }
+.odds-game h3 a { color: var(--blue); font-weight: 600; }
+.odds-book-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 0; font-size: .88rem; }
+.odds-book-row .book { font-weight: 700; color: var(--ink); font-family: var(--display); text-transform: uppercase; font-size: .78rem; letter-spacing: .03em; }
+.odds-price { display: inline-flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.odds-price span { background: var(--bg-2); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; min-width: 3.4em; text-align: center; color: var(--ink-2); }
 
-.responsible-gambling {
-  background: var(--ink);
-  color: #fff;
-  font-size: 0.78rem;
-  padding: 10px 16px;
-  text-align: center;
-}
+.responsible-gambling { background: var(--bg-2); color: var(--ink-3); font-size: .76rem; padding: 12px 16px; text-align: center; border-top: 1px solid var(--line); }
 
-/* ---------- Footer ---------- */
-.site-footer {
-  background: var(--nba-blue-dark);
-  color: rgba(255, 255, 255, 0.85);
-  padding: 24px 0;
-  font-size: 0.85rem;
+/* ---------- Season tabs ---------- */
+.season-tabs { display: flex; gap: 6px; padding: 16px 20px; flex-wrap: wrap; }
+.season-tabs a {
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); font-size: .82rem;
+  font-family: var(--display); text-transform: uppercase; letter-spacing: .02em; color: var(--ink-2);
 }
-.site-footer a { color: #fff; }
-.footer-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; }
+.season-tabs a.active { background: var(--red); color: #fff; border-color: var(--red); }
+.season-tabs a:hover:not(.active) { border-color: var(--blue); color: var(--ink); }
 
 .win-badge, .loss-badge {
-  font-weight: 700;
-  font-size: 0.72rem;
-  padding: 1px 6px;
-  border-radius: 4px;
-  color: #fff;
+  font-family: var(--display); font-weight: 600; font-size: .68rem; padding: 2px 7px; border-radius: 4px; color: #fff;
 }
 .win-badge { background: var(--win); }
 .loss-badge { background: var(--loss); }
 
-.eyebrow {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--nba-red);
-  font-size: 0.78rem;
-  padding: 12px 16px 0;
+/* =============================================================
+   10. Footer
+   ============================================================= */
+.site-footer { padding-block: 3rem 1.5rem; border-top: 1px solid var(--line); background: var(--bg-2); }
+.footer-grid { display: grid; gap: 2rem; }
+.footer-grid strong { font-family: var(--display); text-transform: uppercase; font-size: 1.2rem; color: var(--ink); }
+.footer-grid p { margin-top: .6rem; color: var(--ink-3); font-size: .88rem; max-width: 40ch; }
+.footer-grid a { display: block; color: var(--ink-2); font-size: .88rem; margin-bottom: .5rem; }
+.footer-grid a:hover { color: var(--blue); }
+
+/* =============================================================
+   11. Reveal on scroll
+   ============================================================= */
+[data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease-soft), transform .7s var(--ease-soft); }
+[data-reveal].is-revealed { opacity: 1; transform: none; }
+
+/* =============================================================
+   12. Cursor (desktop only)
+   ============================================================= */
+.cursor { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; display: none; mix-blend-mode: difference; opacity: 0; transition: opacity .25s var(--ease-out); }
+.cursor.is-ready { opacity: 1; }
+@media (hover: hover) and (pointer: fine) { .cursor { display: block; } }
+.cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; will-change: transform; }
+.cursor-dot { width: 5px; height: 5px; margin: -2.5px; background: var(--ink); border-radius: 50%; }
+.cursor-ring { width: 30px; height: 30px; margin: -15px; border: 1px solid var(--ink); border-radius: 50%; transition: width .35s var(--ease-out), height .35s var(--ease-out), margin .35s var(--ease-out); }
+.cursor.is-interactive .cursor-ring { width: 46px; height: 46px; margin: -23px; }
+.has-cursor, .has-cursor a, .has-cursor button { cursor: none; }
+
+/* =============================================================
+   13. Responsive
+   ============================================================= */
+@media (min-width: 760px) {
+  .main-nav { display: flex; }
+  .nav-toggle { display: none; }
 }
-.season-tabs { display: flex; gap: 6px; padding: 12px 16px; flex-wrap: wrap; }
-.season-tabs a {
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  font-size: 0.85rem;
-  font-weight: 600;
+@media (min-width: 1280px) {
+  .container { padding-inline: 2rem; }
 }
-.season-tabs a.active { background: var(--nba-red); color: #fff; border-color: var(--nba-red); }
+
+/* =============================================================
+   14. Reduced motion
+   ============================================================= */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-mesh { animation-duration: 60s; }
+  .ticker-track { animation-duration: 90s; }
+  [data-reveal] { transition-duration: .01s; }
+}
