@@ -9,7 +9,9 @@ Sitio de noticias, estadisticas y cuotas de NBA generado estaticamente. Node.js 
 - Una cuenta de [The Odds API](https://the-odds-api.com) en plan **Professional** (29$/mes) para cuotas de ganador/handicap/total de puntos.
 - Un repositorio en GitHub con GitHub Pages activado (Settings → Pages → Source: GitHub Actions).
 
-Hasta que actives esos planes de pago, el sitio funciona igualmente: `teams`, `players`, `games` y las noticias RSS son gratis y se descargan en vivo; el resto de secciones (estadisticas de jugador, clasificaciones, lideres, cuotas) se rellenan con **datos de muestra** claramente marcados (aparece un aviso amarillo "Modo demo" en esas paginas) hasta que añadas las claves reales.
+**Importante:** balldontlie.io exige una API key registrada incluso para el tier gratis (no hay acceso anonimo). Sin ninguna clave, `teams`/`players`/`games` tambien caen a datos de muestra (nombres de jugador inventados) ademas de estadisticas/clasificaciones/lideres/cuotas. Para tener equipos y plantillas reales basta con una cuenta gratis en balldontlie.io (sin coste); para estadisticas, clasificaciones, lideres y box scores hace falta el plan **GOAT**. Mientras no haya clave, el aviso amarillo "Modo demo" avisa en cada pagina que usa datos de muestra.
+
+Las noticias (RSS) no necesitan ninguna API key y siempre se descargan en vivo.
 
 ## Uso local
 
@@ -41,4 +43,8 @@ En `site.config.json`, rellena `adsense.clientId` (tu `ca-pub-XXXXXXXXXX`) y los
 - `scripts/fetch-data.js` — descarga equipos/jugadores/partidos (gratis) y, si hay claves validas, estadisticas/clasificaciones/lideres/cuotas (planes de pago). Si una llamada de pago falla, cae a datos de muestra y avisa por consola.
 - `scripts/generate-site.js` — renderiza `templates/*.njk` a `dist/` y genera `sitemap.xml`/`robots.txt`.
 - `data/` — cache JSON versionado; permite regenerar el sitio sin volver a llamar a las APIs.
-- `site.config.json` — nombre del sitio, temporada actual, feeds de noticias, region/mercados de cuotas, AdSense.
+- `site.config.json` — nombre del sitio, feeds de noticias, region/mercados de cuotas, AdSense.
+
+## Temporada actual (rollover automatico)
+
+La temporada "actual" no esta fijada en la configuracion: `scripts/lib/util.js#computeCurrentSeason()` la calcula a partir de la fecha real (antes de octubre, sigue siendo la temporada que empezo el año anterior; desde octubre, la que empieza ese mismo año). Esto significa que cuando arranque la temporada 2026-27 en octubre de 2026, el propio cron nocturno pasara a tratar 2026 como temporada actual sin que haya que tocar nada, y las "ultimas 5 temporadas" se desplazaran solas. Los partidos, box scores, clasificaciones y lideres de la temporada en curso se van completando cada noche a medida que se juegan (incremental: solo se piden los partidos que aun no tienen box score guardado).
