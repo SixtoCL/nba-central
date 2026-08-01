@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import nunjucks from 'nunjucks';
-import { readJson, writeJson } from './lib/util.js';
+import { readJson, writeJson, computeCurrentSeason } from './lib/util.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'data');
@@ -57,8 +57,8 @@ async function main() {
 
   const meta = (await readJson(path.join(DATA_DIR, 'meta.json'))) || {
     generatedAt: new Date().toISOString(),
-    seasons: [site.currentSeason],
-    currentSeason: site.currentSeason,
+    seasons: [computeCurrentSeason()],
+    currentSeason: computeCurrentSeason(),
     usingSampleData: {},
   };
   const teams = (await readJson(path.join(DATA_DIR, 'teams.json'))) || [];

@@ -7,7 +7,7 @@ import { createClient as createOddsClient } from './lib/oddsapi-client.js';
 import { fetchNews } from './lib/rss.js';
 import { buildRecap } from './lib/recap.js';
 import { teamSlug, playerSlug } from './lib/slugify.js';
-import { chunk, writeJson, isoDateNDaysAgo } from './lib/util.js';
+import { chunk, writeJson, isoDateNDaysAgo, computeCurrentSeason } from './lib/util.js';
 import {
   makeStaticTeams,
   makeSamplePlayers,
@@ -172,7 +172,8 @@ async function main() {
   const playersById = Object.fromEntries(allPlayers.map((p) => [p.id, p]));
   console.log(`Jugadores: ${allPlayers.length} (${degraded.players ? 'muestra' : 'en vivo'})`);
 
-  const seasons = Array.from({ length: config.lastNSeasons }, (_, i) => config.currentSeason - i);
+  const currentSeason = computeCurrentSeason();
+  const seasons = Array.from({ length: config.lastNSeasons }, (_, i) => currentSeason - i);
 
   const gamesBySeason = {};
   for (const season of seasons) {
@@ -260,7 +261,7 @@ async function main() {
   console.log(`Lideres estadisticos: ${degraded.leaders ? 'muestra' : 'en vivo'}`);
 
   // --- Box scores + recaps for the current season's finished games (incremental) ---
-  const currentSeasonGames = gamesBySeason[config.currentSeason] || [];
+  const currentSeasonGames = gamesBySeason[currentSeason] || [];
   const finishedGames = currentSeasonGames.filter((g) => g.status === 'Final');
   const missingGames = [];
   for (const game of finishedGames) {
@@ -345,7 +346,7 @@ async function main() {
   await writeJson(path.join(DATA_DIR, 'meta.json'), {
     generatedAt: new Date().toISOString(),
     seasons,
-    currentSeason: config.currentSeason,
+    currentSeason,
     usingSampleData: degraded,
   });
 

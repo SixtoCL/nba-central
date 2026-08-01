@@ -26,3 +26,12 @@ export function isoDateNDaysAgo(n) {
   d.setUTCDate(d.getUTCDate() - n);
   return d.toISOString().slice(0, 10);
 }
+
+// balldontlie's `season` field is the year a season started (season 2025 =
+// the 2025-26 season). The NBA season starts in October, so before October
+// we're still in the season that started the previous calendar year.
+export function computeCurrentSeason(date = new Date()) {
+  const year = date.getUTCFullYear();
+  const month = date.getUTCMonth() + 1;
+  return month >= 10 ? year : year - 1;
+}
