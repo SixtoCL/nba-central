@@ -298,5 +298,155 @@
     "conference": "East",
     "division": "Southeast",
     "slug": "washington-wizards"
+  },
+  {
+    "id": 37,
+    "city": "",
+    "name": "Chicago Stags",
+    "full_name": "Chicago Stags",
+    "abbreviation": "CHS",
+    "conference": "    ",
+    "division": "",
+    "slug": "chicago-stags"
+  },
+  {
+    "id": 38,
+    "city": "",
+    "name": "St. Louis Bombers",
+    "full_name": "St. Louis Bombers",
+    "abbreviation": "BOM",
+    "conference": "    ",
+    "division": "",
+    "slug": "st-louis-bombers"
+  },
+  {
+    "id": 39,
+    "city": "",
+    "name": "Cleveland Rebels",
+    "full_name": "Cleveland Rebels",
+    "abbreviation": "CLR",
+    "conference": "    ",
+    "division": "",
+    "slug": "cleveland-rebels"
+  },
+  {
+    "id": 40,
+    "city": "",
+    "name": "Detroit Falcons",
+    "full_name": "Detroit Falcons",
+    "abbreviation": "DEF",
+    "conference": "    ",
+    "division": "",
+    "slug": "detroit-falcons"
+  },
+  {
+    "id": 41,
+    "city": "",
+    "name": "Toronto Huskies",
+    "full_name": "Toronto Huskies",
+    "abbreviation": "HUS",
+    "conference": "    ",
+    "division": "",
+    "slug": "toronto-huskies"
+  },
+  {
+    "id": 42,
+    "city": "",
+    "name": "Washington Capitols",
+    "full_name": "Washington Capitols",
+    "abbreviation": "WAS",
+    "conference": "    ",
+    "division": "",
+    "slug": "washington-capitols"
+  },
+  {
+    "id": 43,
+    "city": "",
+    "name": "Providence Steamrollers",
+    "full_name": "Providence Steamrollers",
+    "abbreviation": "PRO",
+    "conference": "    ",
+    "division": "",
+    "slug": "providence-steamrollers"
+  },
+  {
+    "id": 44,
+    "city": "",
+    "name": "Pittsburgh Ironmen",
+    "full_name": "Pittsburgh Ironmen",
+    "abbreviation": "PIT",
+    "conference": "    ",
+    "division": "",
+    "slug": "pittsburgh-ironmen"
+  },
+  {
+    "id": 45,
+    "city": "",
+    "name": "Baltimore Bullets",
+    "full_name": "Baltimore Bullets",
+    "abbreviation": "BAL",
+    "conference": "    ",
+    "division": "",
+    "slug": "baltimore-bullets"
+  },
+  {
+    "id": 46,
+    "city": "",
+    "name": "Indianapolis Jets",
+    "full_name": "Indianapolis Jets",
+    "abbreviation": "JET",
+    "conference": "    ",
+    "division": "",
+    "slug": "indianapolis-jets"
+  },
+  {
+    "id": 47,
+    "city": "",
+    "name": "Anderson Packers",
+    "full_name": "Anderson Packers",
+    "abbreviation": "AND",
+    "conference": "    ",
+    "division": "",
+    "slug": "anderson-packers"
+  },
+  {
+    "id": 48,
+    "city": "",
+    "name": "Waterloo Hawks",
+    "full_name": "Waterloo Hawks",
+    "abbreviation": "WAT",
+    "conference": "    ",
+    "division": "",
+    "slug": "waterloo-hawks"
+  },
+  {
+    "id": 49,
+    "city": "",
+    "name": "Indianapolis Olympians",
+    "full_name": "Indianapolis Olympians",
+    "abbreviation": "INO",
+    "conference": "    ",
+    "division": "",
+    "slug": "indianapolis-olympians"
+  },
+  {
+    "id": 50,
+    "city": "",
+    "name": "Denver Nuggets",
+    "full_name": "Denver Nuggets",
+    "abbreviation": "DN",
+    "conference": "    ",
+    "division": "",
+    "slug": "denver-nuggets"
+  },
+  {
+    "id": 51,
+    "city": "",
+    "name": "Sheboygan Redskins",
+    "full_name": "Sheboygan Redskins",
+    "abbreviation": "SHE",
+    "conference": "    ",
+    "division": "",
+    "slug": "sheboygan-redskins"
   }
 ]

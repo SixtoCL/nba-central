@@ -54,11 +54,29 @@
     "sample": true
   },
   {
+    "player_id": 346,
+    "value": 33,
+    "stat_type": "pts",
+    "season": 2022,
+    "rank": 7,
+    "games_played": 40,
+    "sample": true
+  },
+  {
+    "player_id": 377,
+    "value": 33,
+    "stat_type": "pts",
+    "season": 2022,
+    "rank": 8,
+    "games_played": 63,
+    "sample": true
+  },
+  {
     "player_id": 36,
     "value": 32,
     "stat_type": "pts",
     "season": 2022,
-    "rank": 7,
+    "rank": 9,
     "games_played": 80,
     "sample": true
   },
@@ -67,26 +85,8 @@
     "value": 32,
     "stat_type": "pts",
     "season": 2022,
-    "rank": 8,
-    "games_played": 51,
-    "sample": true
-  },
-  {
-    "player_id": 167,
-    "value": 32,
-    "stat_type": "pts",
-    "season": 2022,
-    "rank": 9,
-    "games_played": 79,
-    "sample": true
-  },
-  {
-    "player_id": 206,
-    "value": 32,
-    "stat_type": "pts",
-    "season": 2022,
     "rank": 10,
-    "games_played": 68,
+    "games_played": 51,
     "sample": true
   }
 ]

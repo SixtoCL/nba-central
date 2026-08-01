@@ -63,30 +63,30 @@
     "sample": true
   },
   {
+    "player_id": 393,
+    "value": 33,
+    "stat_type": "reb",
+    "season": 2023,
+    "rank": 8,
+    "games_played": 59,
+    "sample": true
+  },
+  {
+    "player_id": 402,
+    "value": 33,
+    "stat_type": "reb",
+    "season": 2023,
+    "rank": 9,
+    "games_played": 57,
+    "sample": true
+  },
+  {
     "player_id": 36,
     "value": 32,
     "stat_type": "reb",
     "season": 2023,
-    "rank": 8,
-    "games_played": 80,
-    "sample": true
-  },
-  {
-    "player_id": 64,
-    "value": 32,
-    "stat_type": "reb",
-    "season": 2023,
-    "rank": 9,
-    "games_played": 76,
-    "sample": true
-  },
-  {
-    "player_id": 152,
-    "value": 32,
-    "stat_type": "reb",
-    "season": 2023,
     "rank": 10,
-    "games_played": 60,
+    "games_played": 80,
     "sample": true
   }
 ]

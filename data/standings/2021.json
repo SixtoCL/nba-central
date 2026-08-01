@@ -328,5 +328,170 @@
     "home_record": "16-22",
     "road_record": "11-33",
     "sample": true
+  },
+  {
+    "team_id": 37,
+    "season": 2021,
+    "wins": 40,
+    "losses": 42,
+    "conference_rank": 1,
+    "division_rank": 1,
+    "home_record": "24-17",
+    "road_record": "16-25",
+    "sample": true
+  },
+  {
+    "team_id": 38,
+    "season": 2021,
+    "wins": 56,
+    "losses": 26,
+    "conference_rank": 2,
+    "division_rank": 2,
+    "home_record": "34-10",
+    "road_record": "22-16",
+    "sample": true
+  },
+  {
+    "team_id": 39,
+    "season": 2021,
+    "wins": 23,
+    "losses": 59,
+    "conference_rank": 3,
+    "division_rank": 3,
+    "home_record": "14-24",
+    "road_record": "9-35",
+    "sample": true
+  },
+  {
+    "team_id": 40,
+    "season": 2021,
+    "wins": 42,
+    "losses": 40,
+    "conference_rank": 4,
+    "division_rank": 4,
+    "home_record": "25-16",
+    "road_record": "17-24",
+    "sample": true
+  },
+  {
+    "team_id": 41,
+    "season": 2021,
+    "wins": 51,
+    "losses": 31,
+    "conference_rank": 5,
+    "division_rank": 5,
+    "home_record": "31-12",
+    "road_record": "20-19",
+    "sample": true
+  },
+  {
+    "team_id": 42,
+    "season": 2021,
+    "wins": 21,
+    "losses": 61,
+    "conference_rank": 6,
+    "division_rank": 1,
+    "home_record": "13-24",
+    "road_record": "8-37",
+    "sample": true
+  },
+  {
+    "team_id": 43,
+    "season": 2021,
+    "wins": 42,
+    "losses": 40,
+    "conference_rank": 7,
+    "division_rank": 2,
+    "home_record": "25-16",
+    "road_record": "17-24",
+    "sample": true
+  },
+  {
+    "team_id": 44,
+    "season": 2021,
+    "wins": 37,
+    "losses": 45,
+    "conference_rank": 8,
+    "division_rank": 3,
+    "home_record": "22-18",
+    "road_record": "15-27",
+    "sample": true
+  },
+  {
+    "team_id": 45,
+    "season": 2021,
+    "wins": 21,
+    "losses": 61,
+    "conference_rank": 9,
+    "division_rank": 4,
+    "home_record": "13-24",
+    "road_record": "8-37",
+    "sample": true
+  },
+  {
+    "team_id": 46,
+    "season": 2021,
+    "wins": 57,
+    "losses": 25,
+    "conference_rank": 10,
+    "division_rank": 5,
+    "home_record": "34-10",
+    "road_record": "23-15",
+    "sample": true
+  },
+  {
+    "team_id": 47,
+    "season": 2021,
+    "wins": 21,
+    "losses": 61,
+    "conference_rank": 11,
+    "division_rank": 1,
+    "home_record": "13-24",
+    "road_record": "8-37",
+    "sample": true
+  },
+  {
+    "team_id": 48,
+    "season": 2021,
+    "wins": 20,
+    "losses": 62,
+    "conference_rank": 12,
+    "division_rank": 2,
+    "home_record": "12-25",
+    "road_record": "8-37",
+    "sample": true
+  },
+  {
+    "team_id": 49,
+    "season": 2021,
+    "wins": 39,
+    "losses": 43,
+    "conference_rank": 13,
+    "division_rank": 3,
+    "home_record": "23-17",
+    "road_record": "16-26",
+    "sample": true
+  },
+  {
+    "team_id": 50,
+    "season": 2021,
+    "wins": 56,
+    "losses": 26,
+    "conference_rank": 14,
+    "division_rank": 4,
+    "home_record": "34-10",
+    "road_record": "22-16",
+    "sample": true
+  },
+  {
+    "team_id": 51,
+    "season": 2021,
+    "wins": 54,
+    "losses": 28,
+    "conference_rank": 15,
+    "division_rank": 5,
+    "home_record": "32-11",
+    "road_record": "22-17",
+    "sample": true
   }
 ]

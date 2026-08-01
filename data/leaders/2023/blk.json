@@ -45,48 +45,48 @@
     "sample": true
   },
   {
-    "player_id": 36,
-    "value": 32,
+    "player_id": 330,
+    "value": 33,
     "stat_type": "blk",
     "season": 2023,
     "rank": 6,
-    "games_played": 80,
+    "games_played": 56,
     "sample": true
   },
   {
-    "player_id": 43,
-    "value": 32,
+    "player_id": 370,
+    "value": 33,
     "stat_type": "blk",
     "season": 2023,
     "rank": 7,
+    "games_played": 59,
+    "sample": true
+  },
+  {
+    "player_id": 373,
+    "value": 33,
+    "stat_type": "blk",
+    "season": 2023,
+    "rank": 8,
     "games_played": 82,
     "sample": true
   },
   {
-    "player_id": 71,
-    "value": 32,
-    "stat_type": "blk",
-    "season": 2023,
-    "rank": 8,
-    "games_played": 72,
-    "sample": true
-  },
-  {
-    "player_id": 72,
-    "value": 32,
+    "player_id": 389,
+    "value": 33,
     "stat_type": "blk",
     "season": 2023,
     "rank": 9,
-    "games_played": 49,
+    "games_played": 59,
     "sample": true
   },
   {
-    "player_id": 153,
-    "value": 32,
+    "player_id": 406,
+    "value": 33,
     "stat_type": "blk",
     "season": 2023,
     "rank": 10,
-    "games_played": 43,
+    "games_played": 49,
     "sample": true
   }
 ]

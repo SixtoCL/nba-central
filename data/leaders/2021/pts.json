@@ -63,30 +63,30 @@
     "sample": true
   },
   {
-    "player_id": 8,
-    "value": 32,
+    "player_id": 303,
+    "value": 33,
     "stat_type": "pts",
     "season": 2021,
     "rank": 8,
-    "games_played": 47,
+    "games_played": 79,
     "sample": true
   },
   {
-    "player_id": 40,
-    "value": 32,
+    "player_id": 333,
+    "value": 33,
     "stat_type": "pts",
     "season": 2021,
     "rank": 9,
-    "games_played": 67,
+    "games_played": 44,
     "sample": true
   },
   {
-    "player_id": 115,
-    "value": 32,
+    "player_id": 383,
+    "value": 33,
     "stat_type": "pts",
     "season": 2021,
     "rank": 10,
-    "games_played": 51,
+    "games_played": 69,
     "sample": true
   }
 ]

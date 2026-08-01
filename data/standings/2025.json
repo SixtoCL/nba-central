@@ -328,5 +328,170 @@
     "home_record": "32-11",
     "road_record": "22-17",
     "sample": true
+  },
+  {
+    "team_id": 37,
+    "season": 2025,
+    "wins": 41,
+    "losses": 41,
+    "conference_rank": 1,
+    "division_rank": 1,
+    "home_record": "25-16",
+    "road_record": "16-25",
+    "sample": true
+  },
+  {
+    "team_id": 38,
+    "season": 2025,
+    "wins": 47,
+    "losses": 35,
+    "conference_rank": 2,
+    "division_rank": 2,
+    "home_record": "28-14",
+    "road_record": "19-21",
+    "sample": true
+  },
+  {
+    "team_id": 39,
+    "season": 2025,
+    "wins": 31,
+    "losses": 51,
+    "conference_rank": 3,
+    "division_rank": 3,
+    "home_record": "19-20",
+    "road_record": "12-31",
+    "sample": true
+  },
+  {
+    "team_id": 40,
+    "season": 2025,
+    "wins": 36,
+    "losses": 46,
+    "conference_rank": 4,
+    "division_rank": 4,
+    "home_record": "22-18",
+    "road_record": "14-28",
+    "sample": true
+  },
+  {
+    "team_id": 41,
+    "season": 2025,
+    "wins": 34,
+    "losses": 48,
+    "conference_rank": 5,
+    "division_rank": 5,
+    "home_record": "20-19",
+    "road_record": "14-29",
+    "sample": true
+  },
+  {
+    "team_id": 42,
+    "season": 2025,
+    "wins": 46,
+    "losses": 36,
+    "conference_rank": 6,
+    "division_rank": 1,
+    "home_record": "28-14",
+    "road_record": "18-22",
+    "sample": true
+  },
+  {
+    "team_id": 43,
+    "season": 2025,
+    "wins": 53,
+    "losses": 29,
+    "conference_rank": 7,
+    "division_rank": 2,
+    "home_record": "32-12",
+    "road_record": "21-17",
+    "sample": true
+  },
+  {
+    "team_id": 44,
+    "season": 2025,
+    "wins": 44,
+    "losses": 38,
+    "conference_rank": 8,
+    "division_rank": 3,
+    "home_record": "26-15",
+    "road_record": "18-23",
+    "sample": true
+  },
+  {
+    "team_id": 45,
+    "season": 2025,
+    "wins": 22,
+    "losses": 60,
+    "conference_rank": 9,
+    "division_rank": 4,
+    "home_record": "13-24",
+    "road_record": "9-36",
+    "sample": true
+  },
+  {
+    "team_id": 46,
+    "season": 2025,
+    "wins": 58,
+    "losses": 24,
+    "conference_rank": 10,
+    "division_rank": 5,
+    "home_record": "35-10",
+    "road_record": "23-14",
+    "sample": true
+  },
+  {
+    "team_id": 47,
+    "season": 2025,
+    "wins": 34,
+    "losses": 48,
+    "conference_rank": 11,
+    "division_rank": 1,
+    "home_record": "20-19",
+    "road_record": "14-29",
+    "sample": true
+  },
+  {
+    "team_id": 48,
+    "season": 2025,
+    "wins": 25,
+    "losses": 57,
+    "conference_rank": 12,
+    "division_rank": 2,
+    "home_record": "15-23",
+    "road_record": "10-34",
+    "sample": true
+  },
+  {
+    "team_id": 49,
+    "season": 2025,
+    "wins": 55,
+    "losses": 27,
+    "conference_rank": 13,
+    "division_rank": 3,
+    "home_record": "33-11",
+    "road_record": "22-16",
+    "sample": true
+  },
+  {
+    "team_id": 50,
+    "season": 2025,
+    "wins": 39,
+    "losses": 43,
+    "conference_rank": 14,
+    "division_rank": 4,
+    "home_record": "23-17",
+    "road_record": "16-26",
+    "sample": true
+  },
+  {
+    "team_id": 51,
+    "season": 2025,
+    "wins": 20,
+    "losses": 62,
+    "conference_rank": 15,
+    "division_rank": 5,
+    "home_record": "12-25",
+    "road_record": "8-37",
+    "sample": true
   }
 ]
