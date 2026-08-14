@@ -72,21 +72,21 @@
     "sample": true
   },
   {
-    "player_id": 24,
-    "value": 32,
+    "player_id": 463,
+    "value": 33,
     "stat_type": "fg3m",
     "season": 2024,
     "rank": 9,
-    "games_played": 54,
+    "games_played": 71,
     "sample": true
   },
   {
-    "player_id": 40,
-    "value": 32,
+    "player_id": 528,
+    "value": 33,
     "stat_type": "fg3m",
     "season": 2024,
     "rank": 10,
-    "games_played": 67,
+    "games_played": 63,
     "sample": true
   }
 ]

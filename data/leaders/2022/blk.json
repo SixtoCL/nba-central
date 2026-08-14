@@ -72,21 +72,21 @@
     "sample": true
   },
   {
-    "player_id": 17,
-    "value": 32,
+    "player_id": 601,
+    "value": 33,
     "stat_type": "blk",
     "season": 2022,
     "rank": 9,
-    "games_played": 68,
+    "games_played": 80,
     "sample": true
   },
   {
-    "player_id": 38,
-    "value": 32,
+    "player_id": 650,
+    "value": 33,
     "stat_type": "blk",
     "season": 2022,
     "rank": 10,
-    "games_played": 70,
+    "games_played": 79,
     "sample": true
   }
 ]

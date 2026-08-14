@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T11:34:21.651Z",
+  "generatedAt": "2026-08-14T11:30:26.413Z",
   "seasons": [
     2025,
     2024,
@@ -15,7 +15,7 @@
     "seasonAverages": true,
     "standings": true,
     "leaders": true,
-    "boxscores": false,
+    "boxscores": true,
     "odds": true
   }
 }

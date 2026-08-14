@@ -63,30 +63,30 @@
     "sample": true
   },
   {
-    "player_id": 1,
-    "value": 32,
+    "player_id": 507,
+    "value": 33,
     "stat_type": "fg3m",
     "season": 2022,
     "rank": 8,
-    "games_played": 66,
+    "games_played": 76,
     "sample": true
   },
   {
-    "player_id": 28,
-    "value": 32,
+    "player_id": 557,
+    "value": 33,
     "stat_type": "fg3m",
     "season": 2022,
     "rank": 9,
-    "games_played": 58,
+    "games_played": 42,
     "sample": true
   },
   {
-    "player_id": 31,
-    "value": 32,
+    "player_id": 573,
+    "value": 33,
     "stat_type": "fg3m",
     "season": 2022,
     "rank": 10,
-    "games_played": 68,
+    "games_played": 52,
     "sample": true
   }
 ]

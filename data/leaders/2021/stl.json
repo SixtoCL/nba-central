@@ -54,39 +54,39 @@
     "sample": true
   },
   {
-    "player_id": 65,
-    "value": 32,
+    "player_id": 592,
+    "value": 33,
     "stat_type": "stl",
     "season": 2021,
     "rank": 7,
-    "games_played": 45,
+    "games_played": 46,
     "sample": true
   },
   {
-    "player_id": 69,
-    "value": 32,
+    "player_id": 643,
+    "value": 33,
     "stat_type": "stl",
     "season": 2021,
     "rank": 8,
-    "games_played": 73,
+    "games_played": 51,
     "sample": true
   },
   {
-    "player_id": 91,
-    "value": 32,
+    "player_id": 718,
+    "value": 33,
     "stat_type": "stl",
     "season": 2021,
     "rank": 9,
-    "games_played": 68,
+    "games_played": 58,
     "sample": true
   },
   {
-    "player_id": 155,
-    "value": 32,
+    "player_id": 752,
+    "value": 33,
     "stat_type": "stl",
     "season": 2021,
     "rank": 10,
-    "games_played": 55,
+    "games_played": 81,
     "sample": true
   }
 ]

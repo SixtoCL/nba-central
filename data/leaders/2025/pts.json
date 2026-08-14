@@ -63,30 +63,30 @@
     "sample": true
   },
   {
-    "player_id": 40,
-    "value": 32,
+    "player_id": 515,
+    "value": 33,
     "stat_type": "pts",
     "season": 2025,
     "rank": 8,
-    "games_played": 67,
+    "games_played": 46,
     "sample": true
   },
   {
-    "player_id": 56,
-    "value": 32,
+    "player_id": 546,
+    "value": 33,
     "stat_type": "pts",
     "season": 2025,
     "rank": 9,
-    "games_played": 47,
+    "games_played": 58,
     "sample": true
   },
   {
-    "player_id": 128,
-    "value": 32,
+    "player_id": 699,
+    "value": 33,
     "stat_type": "pts",
     "season": 2025,
     "rank": 10,
-    "games_played": 59,
+    "games_played": 82,
     "sample": true
   }
 ]

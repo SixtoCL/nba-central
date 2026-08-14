@@ -36,26 +36,26 @@
     "sample": true
   },
   {
-    "player_id": 10,
-    "value": 32,
+    "player_id": 527,
+    "value": 33,
     "stat_type": "reb",
     "season": 2024,
     "rank": 5,
-    "games_played": 61,
+    "games_played": 71,
     "sample": true
   },
   {
-    "player_id": 31,
-    "value": 32,
+    "player_id": 543,
+    "value": 33,
     "stat_type": "reb",
     "season": 2024,
     "rank": 6,
-    "games_played": 68,
+    "games_played": 46,
     "sample": true
   },
   {
-    "player_id": 54,
-    "value": 32,
+    "player_id": 632,
+    "value": 33,
     "stat_type": "reb",
     "season": 2024,
     "rank": 7,
@@ -63,30 +63,30 @@
     "sample": true
   },
   {
-    "player_id": 70,
-    "value": 32,
+    "player_id": 681,
+    "value": 33,
     "stat_type": "reb",
     "season": 2024,
     "rank": 8,
-    "games_played": 73,
+    "games_played": 49,
     "sample": true
   },
   {
-    "player_id": 87,
-    "value": 32,
+    "player_id": 752,
+    "value": 33,
     "stat_type": "reb",
     "season": 2024,
     "rank": 9,
-    "games_played": 42,
+    "games_played": 81,
     "sample": true
   },
   {
-    "player_id": 98,
-    "value": 32,
+    "player_id": 756,
+    "value": 33,
     "stat_type": "reb",
     "season": 2024,
     "rank": 10,
-    "games_played": 61,
+    "games_played": 72,
     "sample": true
   }
 ]

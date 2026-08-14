@@ -448,5 +448,435 @@
     "conference": "    ",
     "division": "",
     "slug": "sheboygan-redskins"
+  },
+  {
+    "id": 2844,
+    "city": "Barcelona",
+    "name": "Winterthur FC",
+    "full_name": "Barcelona Winterthur FC",
+    "abbreviation": "BAR",
+    "conference": "    ",
+    "division": "",
+    "slug": "barcelona-winterthur-fc"
+  },
+  {
+    "id": 2846,
+    "city": "Lyon-Villeurbanne",
+    "name": "Adecco ASVEL",
+    "full_name": "Lyon-Villeurbanne Adecco ASVEL",
+    "abbreviation": "LYV",
+    "conference": "    ",
+    "division": "",
+    "slug": "lyon-villeurbanne-adecco-asvel"
+  },
+  {
+    "id": 2848,
+    "city": "Khimki",
+    "name": "BC",
+    "full_name": "Khimki BC",
+    "abbreviation": "KHI",
+    "conference": "    ",
+    "division": "",
+    "slug": "khimki-bc"
+  },
+  {
+    "id": 2850,
+    "city": "Roma",
+    "name": "Virtus Lottomatica",
+    "full_name": "Roma Virtus Lottomatica",
+    "abbreviation": "ROM",
+    "conference": "    ",
+    "division": "",
+    "slug": "roma-virtus-lottomatica"
+  },
+  {
+    "id": 2852,
+    "city": "Tel Aviv",
+    "name": "Maccabi Elite",
+    "full_name": "Tel Aviv Maccabi Elite",
+    "abbreviation": "MTA",
+    "conference": "    ",
+    "division": "",
+    "slug": "tel-aviv-maccabi-elite"
+  },
+  {
+    "id": 2854,
+    "city": "Moscow",
+    "name": "CSKA",
+    "full_name": "Moscow CSKA",
+    "abbreviation": "MOS",
+    "conference": "    ",
+    "division": "",
+    "slug": "moscow-cska"
+  },
+  {
+    "id": 2865,
+    "city": "Istanbul",
+    "name": "Efes Pilsen",
+    "full_name": "Istanbul Efes Pilsen",
+    "abbreviation": "EPT",
+    "conference": "    ",
+    "division": "",
+    "slug": "istanbul-efes-pilsen"
+  },
+  {
+    "id": 3094,
+    "city": "Lottomatica",
+    "name": "Lottomatica Roma",
+    "full_name": "Lottomatica Lottomatica Roma",
+    "abbreviation": "LRO",
+    "conference": "    ",
+    "division": "",
+    "slug": "lottomatica-lottomatica-roma"
+  },
+  {
+    "id": 3114,
+    "city": "Unicaja Malaga",
+    "name": "Unicaja Malaga",
+    "full_name": "Unicaja Malaga Unicaja Malaga",
+    "abbreviation": "MAL",
+    "conference": "    ",
+    "division": "",
+    "slug": "unicaja-malaga-unicaja-malaga"
+  },
+  {
+    "id": 3126,
+    "city": "MMT Estudiantes",
+    "name": "MMT Estudiantes",
+    "full_name": "MMT Estudiantes MMT Estudiantes",
+    "abbreviation": "MMT",
+    "conference": "    ",
+    "division": "",
+    "slug": "mmt-estudiantes-mmt-estudiantes"
+  },
+  {
+    "id": 3139,
+    "city": "Panathinaikos",
+    "name": "Panathinaikos",
+    "full_name": "Panathinaikos Panathinaikos",
+    "abbreviation": "PAN",
+    "conference": "    ",
+    "division": "",
+    "slug": "panathinaikos-panathinaikos"
+  },
+  {
+    "id": 3142,
+    "city": "Real Madrid",
+    "name": "Real Madrid",
+    "full_name": "Real Madrid Real Madrid",
+    "abbreviation": "RMA",
+    "conference": "    ",
+    "division": "",
+    "slug": "real-madrid-real-madrid"
+  },
+  {
+    "id": 3183,
+    "city": "Zalgiris Kaunas",
+    "name": "Zalgiris Kaunas",
+    "full_name": "Zalgiris Kaunas Zalgiris Kaunas",
+    "abbreviation": "ZAK",
+    "conference": "    ",
+    "division": "",
+    "slug": "zalgiris-kaunas-zalgiris-kaunas"
+  },
+  {
+    "id": 3218,
+    "city": "China",
+    "name": "Team China",
+    "full_name": "China Team China",
+    "abbreviation": "CHN",
+    "conference": "    ",
+    "division": "",
+    "slug": "china-team-china"
+  },
+  {
+    "id": 3487,
+    "city": "Vilnius",
+    "name": "Lietuvos Rytas",
+    "full_name": "Vilnius Lietuvos Rytas",
+    "abbreviation": "LRY",
+    "conference": "    ",
+    "division": "",
+    "slug": "vilnius-lietuvos-rytas"
+  },
+  {
+    "id": 3535,
+    "city": "Belegrade",
+    "name": "Partizan",
+    "full_name": "Belegrade Partizan",
+    "abbreviation": "PAR",
+    "conference": "    ",
+    "division": "",
+    "slug": "belegrade-partizan"
+  },
+  {
+    "id": 3595,
+    "city": "Athens",
+    "name": "Olympiacos",
+    "full_name": "Athens Olympiacos",
+    "abbreviation": "OLP",
+    "conference": "    ",
+    "division": "",
+    "slug": "athens-olympiacos"
+  },
+  {
+    "id": 3766,
+    "city": "Milano",
+    "name": "Armani Jeans Milano",
+    "full_name": "Milano Armani Jeans Milano",
+    "abbreviation": "MLN",
+    "conference": "    ",
+    "division": "",
+    "slug": "milano-armani-jeans-milano"
+  },
+  {
+    "id": 3771,
+    "city": "Haifa",
+    "name": "Maccabi Haifa",
+    "full_name": "Haifa Maccabi Haifa",
+    "abbreviation": "MAC",
+    "conference": "    ",
+    "division": "",
+    "slug": "haifa-maccabi-haifa"
+  },
+  {
+    "id": 3887,
+    "city": "Vitoria",
+    "name": "Caja Laboral",
+    "full_name": "Vitoria Caja Laboral",
+    "abbreviation": "LAB",
+    "conference": "    ",
+    "division": "",
+    "slug": "vitoria-caja-laboral"
+  },
+  {
+    "id": 4064,
+    "city": "Istanbul",
+    "name": "Fenerbahce Ulker",
+    "full_name": "Istanbul Fenerbahce Ulker",
+    "abbreviation": "FBU",
+    "conference": "    ",
+    "division": "",
+    "slug": "istanbul-fenerbahce-ulker"
+  },
+  {
+    "id": 4066,
+    "city": "Berlin",
+    "name": "Alba Berlin",
+    "full_name": "Berlin Alba Berlin",
+    "abbreviation": "ALB",
+    "conference": "    ",
+    "division": "",
+    "slug": "berlin-alba-berlin"
+  },
+  {
+    "id": 4069,
+    "city": "Siena",
+    "name": "Montepaschi Siena",
+    "full_name": "Siena Montepaschi Siena",
+    "abbreviation": "MPS",
+    "conference": "    ",
+    "division": "",
+    "slug": "siena-montepaschi-siena"
+  },
+  {
+    "id": 4304,
+    "city": "Bilbao",
+    "name": "Basket",
+    "full_name": "Bilbao Basket",
+    "abbreviation": "UBB",
+    "conference": "    ",
+    "division": "",
+    "slug": "bilbao-basket"
+  },
+  {
+    "id": 4533,
+    "city": "Tel Aviv",
+    "name": "Maccabi Electra",
+    "full_name": "Tel Aviv Maccabi Electra",
+    "abbreviation": "MTA",
+    "conference": "    ",
+    "division": "",
+    "slug": "tel-aviv-maccabi-electra"
+  },
+  {
+    "id": 4565,
+    "city": "Flamengo",
+    "name": "Flamengo",
+    "full_name": "Flamengo Flamengo",
+    "abbreviation": "FLA",
+    "conference": "    ",
+    "division": "",
+    "slug": "flamengo-flamengo"
+  },
+  {
+    "id": 4805,
+    "city": "Bauru",
+    "name": "Paschoalotto/Bauru",
+    "full_name": "Bauru Paschoalotto/Bauru",
+    "abbreviation": "BAU",
+    "conference": "    ",
+    "division": "",
+    "slug": "bauru-paschoalotto-bauru"
+  },
+  {
+    "id": 4985,
+    "city": "Shanghai",
+    "name": "Shanghai Sharks",
+    "full_name": "Shanghai Shanghai Sharks",
+    "abbreviation": "SDS",
+    "conference": "    ",
+    "division": "",
+    "slug": "shanghai-shanghai-sharks"
+  },
+  {
+    "id": 5097,
+    "city": "Buenos Aires",
+    "name": "San Lorenzo",
+    "full_name": "Buenos Aires San Lorenzo",
+    "abbreviation": "SLA",
+    "conference": "    ",
+    "division": "",
+    "slug": "buenos-aires-san-lorenzo"
+  },
+  {
+    "id": 5193,
+    "city": "Guangzhou",
+    "name": "Long-Lions",
+    "full_name": "Guangzhou Long-Lions",
+    "abbreviation": "GUA",
+    "conference": "    ",
+    "division": "",
+    "slug": "guangzhou-long-lions"
+  },
+  {
+    "id": 5197,
+    "city": "Sydney",
+    "name": "Kings",
+    "full_name": "Sydney Kings",
+    "abbreviation": "SYD",
+    "conference": "    ",
+    "division": "",
+    "slug": "sydney-kings"
+  },
+  {
+    "id": 5257,
+    "city": "Melbourne",
+    "name": "United",
+    "full_name": "Melbourne United",
+    "abbreviation": "MEL",
+    "conference": "    ",
+    "division": "",
+    "slug": "melbourne-united"
+  },
+  {
+    "id": 5327,
+    "city": "Brisbane",
+    "name": "Bullets",
+    "full_name": "Brisbane Bullets",
+    "abbreviation": "BNE",
+    "conference": "    ",
+    "division": "",
+    "slug": "brisbane-bullets"
+  },
+  {
+    "id": 5341,
+    "city": "Beijing",
+    "name": "Ducks",
+    "full_name": "Beijing Ducks",
+    "abbreviation": "BJD",
+    "conference": "    ",
+    "division": "",
+    "slug": "beijing-ducks"
+  },
+  {
+    "id": 5345,
+    "city": "Perth",
+    "name": "Wildcats",
+    "full_name": "Perth Wildcats",
+    "abbreviation": "PER",
+    "conference": "    ",
+    "division": "",
+    "slug": "perth-wildcats"
+  },
+  {
+    "id": 5383,
+    "city": "New Zealand",
+    "name": "Breakers",
+    "full_name": "New Zealand Breakers",
+    "abbreviation": "NZB",
+    "conference": "    ",
+    "division": "",
+    "slug": "new-zealand-breakers"
+  },
+  {
+    "id": 5411,
+    "city": "Adelaide",
+    "name": "36ers",
+    "full_name": "Adelaide 36ers",
+    "abbreviation": "ADL",
+    "conference": "    ",
+    "division": "",
+    "slug": "adelaide-36ers"
+  },
+  {
+    "id": 5501,
+    "city": "SESI/Franca",
+    "name": "Basketball Club of Brazil",
+    "full_name": "SESI/Franca Basketball Club of Brazil",
+    "abbreviation": "FRA",
+    "conference": "    ",
+    "division": "",
+    "slug": "sesi-franca-basketball-club-of-brazil"
+  },
+  {
+    "id": 5949,
+    "city": "Ra'anana",
+    "name": "Maccabi Ra'anana",
+    "full_name": "Ra'anana Maccabi Ra'anana",
+    "abbreviation": "MRA",
+    "conference": "    ",
+    "division": "",
+    "slug": "ra-anana-maccabi-ra-anana"
+  },
+  {
+    "id": 6113,
+    "city": "Cairns",
+    "name": "Taipans",
+    "full_name": "Cairns Taipans",
+    "abbreviation": "CNS",
+    "conference": "    ",
+    "division": "",
+    "slug": "cairns-taipans"
+  },
+  {
+    "id": 6349,
+    "city": "Ratiopharm",
+    "name": "Ulm",
+    "full_name": "Ratiopharm Ulm",
+    "abbreviation": "ULM",
+    "conference": "    ",
+    "division": "",
+    "slug": "ratiopharm-ulm"
+  },
+  {
+    "id": 6399,
+    "city": "South East Melbourne",
+    "name": "Phoenix",
+    "full_name": "South East Melbourne Phoenix",
+    "abbreviation": "SEM",
+    "conference": "    ",
+    "division": "",
+    "slug": "south-east-melbourne-phoenix"
+  },
+  {
+    "id": 6429,
+    "city": "Hapoel",
+    "name": "Jerusalem B.C.",
+    "full_name": "Hapoel Jerusalem B.C.",
+    "abbreviation": "HAP",
+    "conference": "    ",
+    "division": "",
+    "slug": "hapoel-jerusalem-b-c"
   }
 ]

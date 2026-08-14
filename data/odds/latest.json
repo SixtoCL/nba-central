@@ -1,9 +1,9 @@
 [
   {
-    "game_id": 202500264,
-    "commence_time": "2026-02-21",
-    "home_team": "Sheboygan Redskins",
-    "away_team": "Dallas Mavericks",
+    "game_id": 202500520,
+    "commence_time": "2026-03-01",
+    "home_team": "Hapoel Jerusalem B.C.",
+    "away_team": "Cleveland Cavaliers",
     "bookmakers": [
       {
         "key": "betclic",
@@ -13,12 +13,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.3
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.52
               },
               {
-                "name": "Dallas Mavericks",
-                "price": 1.55
+                "name": "Cleveland Cavaliers",
+                "price": 1.95
               }
             ]
           },
@@ -27,12 +27,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 218,
+                "point": 228,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 218,
+                "point": 228,
                 "price": 1.9
               }
             ]
@@ -47,8 +47,119 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.23
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 1.42
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 2.26
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 235,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 235,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.87
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 2.43
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 213,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 213,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.7
+              },
+              {
+                "name": "Cleveland Cavaliers",
+                "price": 2.47
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 227,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 227,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sample": true
+  },
+  {
+    "game_id": 202500521,
+    "commence_time": "2026-03-11",
+    "home_team": "Hapoel Jerusalem B.C.",
+    "away_team": "Dallas Mavericks",
+    "bookmakers": [
+      {
+        "key": "betclic",
+        "title": "Betclic",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 1.82
               },
               {
                 "name": "Dallas Mavericks",
@@ -61,12 +172,46 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 231,
+                "point": 214,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 231,
+                "point": 214,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "unibet",
+        "title": "Unibet",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.67
+              },
+              {
+                "name": "Dallas Mavericks",
+                "price": 2.97
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 212,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 212,
                 "price": 1.9
               }
             ]
@@ -81,12 +226,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 1.51
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 1.78
               },
               {
                 "name": "Dallas Mavericks",
-                "price": 3.38
+                "price": 2.98
               }
             ]
           },
@@ -95,12 +240,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 222,
+                "point": 214,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 222,
+                "point": 214,
                 "price": 1.9
               }
             ]
@@ -115,12 +260,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 3.08
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.16
               },
               {
                 "name": "Dallas Mavericks",
-                "price": 3.21
+                "price": 1.46
               }
             ]
           },
@@ -129,12 +274,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 224,
+                "point": 228,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 224,
+                "point": 228,
                 "price": 1.9
               }
             ]
@@ -145,9 +290,9 @@
     "sample": true
   },
   {
-    "game_id": 202500265,
-    "commence_time": "2026-06-01",
-    "home_team": "Sheboygan Redskins",
+    "game_id": 202500522,
+    "commence_time": "2026-07-10",
+    "home_team": "Hapoel Jerusalem B.C.",
     "away_team": "Denver Nuggets",
     "bookmakers": [
       {
@@ -158,12 +303,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 1.97
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.54
               },
               {
                 "name": "Denver Nuggets",
-                "price": 1.85
+                "price": 2.25
               }
             ]
           },
@@ -172,12 +317,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 231,
+                "point": 219,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 231,
+                "point": 219,
                 "price": 1.9
               }
             ]
@@ -192,12 +337,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.2
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 3.23
               },
               {
                 "name": "Denver Nuggets",
-                "price": 1.62
+                "price": 1.53
               }
             ]
           },
@@ -206,12 +351,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 211,
+                "point": 216,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 211,
+                "point": 216,
                 "price": 1.9
               }
             ]
@@ -226,12 +371,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.46
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 3.39
               },
               {
                 "name": "Denver Nuggets",
-                "price": 2.54
+                "price": 2.53
               }
             ]
           },
@@ -240,12 +385,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 212,
+                "point": 229,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 212,
+                "point": 229,
                 "price": 1.9
               }
             ]
@@ -260,12 +405,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.57
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.71
               },
               {
                 "name": "Denver Nuggets",
-                "price": 1.49
+                "price": 1.68
               }
             ]
           },
@@ -274,12 +419,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 233,
+                "point": 220,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 233,
+                "point": 220,
                 "price": 1.9
               }
             ]
@@ -290,9 +435,9 @@
     "sample": true
   },
   {
-    "game_id": 202500266,
-    "commence_time": "2026-03-04",
-    "home_team": "Sheboygan Redskins",
+    "game_id": 202500523,
+    "commence_time": "2026-02-25",
+    "home_team": "Hapoel Jerusalem B.C.",
     "away_team": "Detroit Pistons",
     "bookmakers": [
       {
@@ -303,12 +448,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.17
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.24
               },
               {
                 "name": "Detroit Pistons",
-                "price": 2.52
+                "price": 2.62
               }
             ]
           },
@@ -317,12 +462,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 220,
+                "point": 218,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 220,
+                "point": 218,
                 "price": 1.9
               }
             ]
@@ -337,12 +482,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 3.38
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.37
               },
               {
                 "name": "Detroit Pistons",
-                "price": 3.38
+                "price": 2.3
               }
             ]
           },
@@ -351,12 +496,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 219,
+                "point": 234,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 219,
+                "point": 234,
                 "price": 1.9
               }
             ]
@@ -371,12 +516,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 1.79
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.85
               },
               {
                 "name": "Detroit Pistons",
-                "price": 2.41
+                "price": 2.83
               }
             ]
           },
@@ -385,12 +530,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 219,
+                "point": 227,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 219,
+                "point": 227,
                 "price": 1.9
               }
             ]
@@ -405,12 +550,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 3.25
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.88
               },
               {
                 "name": "Detroit Pistons",
-                "price": 3.15
+                "price": 2.65
               }
             ]
           },
@@ -419,12 +564,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 211,
+                "point": 214,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 211,
+                "point": 214,
                 "price": 1.9
               }
             ]
@@ -435,9 +580,9 @@
     "sample": true
   },
   {
-    "game_id": 202500267,
-    "commence_time": "2026-07-21",
-    "home_team": "Sheboygan Redskins",
+    "game_id": 202500524,
+    "commence_time": "2026-07-25",
+    "home_team": "Hapoel Jerusalem B.C.",
     "away_team": "Golden State Warriors",
     "bookmakers": [
       {
@@ -448,12 +593,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 3.27
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 1.74
               },
               {
                 "name": "Golden State Warriors",
-                "price": 2.86
+                "price": 2.01
               }
             ]
           },
@@ -462,12 +607,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 213,
+                "point": 231,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 213,
+                "point": 231,
                 "price": 1.9
               }
             ]
@@ -482,12 +627,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 1.78
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 3.24
               },
               {
                 "name": "Golden State Warriors",
-                "price": 2.83
+                "price": 3.07
               }
             ]
           },
@@ -496,12 +641,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 230,
+                "point": 224,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 230,
+                "point": 224,
                 "price": 1.9
               }
             ]
@@ -516,12 +661,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.55
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 3.39
               },
               {
                 "name": "Golden State Warriors",
-                "price": 1.57
+                "price": 2.72
               }
             ]
           },
@@ -530,12 +675,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 212,
+                "point": 223,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 212,
+                "point": 223,
                 "price": 1.9
               }
             ]
@@ -550,12 +695,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 1.84
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.54
               },
               {
                 "name": "Golden State Warriors",
-                "price": 2.5
+                "price": 2.82
               }
             ]
           },
@@ -564,12 +709,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 220,
+                "point": 210,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 220,
+                "point": 210,
                 "price": 1.9
               }
             ]
@@ -580,9 +725,9 @@
     "sample": true
   },
   {
-    "game_id": 202500268,
-    "commence_time": "2026-03-06",
-    "home_team": "Sheboygan Redskins",
+    "game_id": 202500525,
+    "commence_time": "2026-03-03",
+    "home_team": "Hapoel Jerusalem B.C.",
     "away_team": "Houston Rockets",
     "bookmakers": [
       {
@@ -593,12 +738,12 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.46
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 1.47
               },
               {
                 "name": "Houston Rockets",
-                "price": 3.11
+                "price": 2.94
               }
             ]
           },
@@ -607,12 +752,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 218,
+                "point": 229,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 218,
+                "point": 229,
                 "price": 1.9
               }
             ]
@@ -627,8 +772,76 @@
             "key": "h2h",
             "outcomes": [
               {
-                "name": "Sheboygan Redskins",
-                "price": 2.51
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 2.59
+              },
+              {
+                "name": "Houston Rockets",
+                "price": 2.06
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 223,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 223,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bet365",
+        "title": "Bet365",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 1.5
+              },
+              {
+                "name": "Houston Rockets",
+                "price": 1.6
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "outcomes": [
+              {
+                "name": "Over",
+                "point": 232,
+                "price": 1.9
+              },
+              {
+                "name": "Under",
+                "point": 232,
+                "price": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betsson",
+        "title": "Betsson",
+        "markets": [
+          {
+            "key": "h2h",
+            "outcomes": [
+              {
+                "name": "Hapoel Jerusalem B.C.",
+                "price": 3.15
               },
               {
                 "name": "Houston Rockets",
@@ -641,225 +854,12 @@
             "outcomes": [
               {
                 "name": "Over",
-                "point": 224,
+                "point": 231,
                 "price": 1.9
               },
               {
                 "name": "Under",
-                "point": 224,
-                "price": 1.9
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bet365",
-        "title": "Bet365",
-        "markets": [
-          {
-            "key": "h2h",
-            "outcomes": [
-              {
-                "name": "Sheboygan Redskins",
-                "price": 2.48
-              },
-              {
-                "name": "Houston Rockets",
-                "price": 2.15
-              }
-            ]
-          },
-          {
-            "key": "totals",
-            "outcomes": [
-              {
-                "name": "Over",
-                "point": 225,
-                "price": 1.9
-              },
-              {
-                "name": "Under",
-                "point": 225,
-                "price": 1.9
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betsson",
-        "title": "Betsson",
-        "markets": [
-          {
-            "key": "h2h",
-            "outcomes": [
-              {
-                "name": "Sheboygan Redskins",
-                "price": 1.48
-              },
-              {
-                "name": "Houston Rockets",
-                "price": 2.8
-              }
-            ]
-          },
-          {
-            "key": "totals",
-            "outcomes": [
-              {
-                "name": "Over",
-                "point": 215,
-                "price": 1.9
-              },
-              {
-                "name": "Under",
-                "point": 215,
-                "price": 1.9
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "sample": true
-  },
-  {
-    "game_id": 202500269,
-    "commence_time": "2026-04-09",
-    "home_team": "Sheboygan Redskins",
-    "away_team": "Indiana Pacers",
-    "bookmakers": [
-      {
-        "key": "betclic",
-        "title": "Betclic",
-        "markets": [
-          {
-            "key": "h2h",
-            "outcomes": [
-              {
-                "name": "Sheboygan Redskins",
-                "price": 3.29
-              },
-              {
-                "name": "Indiana Pacers",
-                "price": 2.82
-              }
-            ]
-          },
-          {
-            "key": "totals",
-            "outcomes": [
-              {
-                "name": "Over",
-                "point": 219,
-                "price": 1.9
-              },
-              {
-                "name": "Under",
-                "point": 219,
-                "price": 1.9
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "unibet",
-        "title": "Unibet",
-        "markets": [
-          {
-            "key": "h2h",
-            "outcomes": [
-              {
-                "name": "Sheboygan Redskins",
-                "price": 3.06
-              },
-              {
-                "name": "Indiana Pacers",
-                "price": 2.32
-              }
-            ]
-          },
-          {
-            "key": "totals",
-            "outcomes": [
-              {
-                "name": "Over",
-                "point": 220,
-                "price": 1.9
-              },
-              {
-                "name": "Under",
-                "point": 220,
-                "price": 1.9
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bet365",
-        "title": "Bet365",
-        "markets": [
-          {
-            "key": "h2h",
-            "outcomes": [
-              {
-                "name": "Sheboygan Redskins",
-                "price": 2.03
-              },
-              {
-                "name": "Indiana Pacers",
-                "price": 2.8
-              }
-            ]
-          },
-          {
-            "key": "totals",
-            "outcomes": [
-              {
-                "name": "Over",
-                "point": 228,
-                "price": 1.9
-              },
-              {
-                "name": "Under",
-                "point": 228,
-                "price": 1.9
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betsson",
-        "title": "Betsson",
-        "markets": [
-          {
-            "key": "h2h",
-            "outcomes": [
-              {
-                "name": "Sheboygan Redskins",
-                "price": 1.41
-              },
-              {
-                "name": "Indiana Pacers",
-                "price": 2.21
-              }
-            ]
-          },
-          {
-            "key": "totals",
-            "outcomes": [
-              {
-                "name": "Over",
-                "point": 229,
-                "price": 1.9
-              },
-              {
-                "name": "Under",
-                "point": 229,
+                "point": 231,
                 "price": 1.9
               }
             ]
