@@ -966,5 +966,16 @@
     "home_record": "23-18",
     "road_record": "15-26",
     "sample": true
+  },
+  {
+    "team_id": 216597,
+    "season": 2021,
+    "wins": 57,
+    "losses": 25,
+    "conference_rank": 14,
+    "division_rank": 4,
+    "home_record": "34-10",
+    "road_record": "23-15",
+    "sample": true
   }
 ]

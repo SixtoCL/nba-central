@@ -966,5 +966,16 @@
     "home_record": "29-14",
     "road_record": "19-20",
     "sample": true
+  },
+  {
+    "team_id": 216597,
+    "season": 2024,
+    "wins": 31,
+    "losses": 51,
+    "conference_rank": 14,
+    "division_rank": 4,
+    "home_record": "19-20",
+    "road_record": "12-31",
+    "sample": true
   }
 ]

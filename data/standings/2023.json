@@ -966,5 +966,16 @@
     "home_record": "31-12",
     "road_record": "21-18",
     "sample": true
+  },
+  {
+    "team_id": 216597,
+    "season": 2023,
+    "wins": 27,
+    "losses": 55,
+    "conference_rank": 14,
+    "division_rank": 4,
+    "home_record": "16-22",
+    "road_record": "11-33",
+    "sample": true
   }
 ]

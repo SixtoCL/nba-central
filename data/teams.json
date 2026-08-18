@@ -878,5 +878,15 @@
     "conference": "    ",
     "division": "",
     "slug": "hapoel-jerusalem-b-c"
+  },
+  {
+    "id": 216597,
+    "city": "London",
+    "name": "Lions",
+    "full_name": "London Lions",
+    "abbreviation": "LON",
+    "conference": "    ",
+    "division": "",
+    "slug": "london-lions"
   }
 ]
