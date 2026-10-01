@@ -1,0 +1,92 @@
+[
+  {
+    "player_id": 56,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 1,
+    "games_played": 47,
+    "sample": true
+  },
+  {
+    "player_id": 72,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 2,
+    "games_played": 49,
+    "sample": true
+  },
+  {
+    "player_id": 298,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 3,
+    "games_played": 61,
+    "sample": true
+  },
+  {
+    "player_id": 395,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 4,
+    "games_played": 66,
+    "sample": true
+  },
+  {
+    "player_id": 424,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 5,
+    "games_played": 59,
+    "sample": true
+  },
+  {
+    "player_id": 554,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 6,
+    "games_played": 67,
+    "sample": true
+  },
+  {
+    "player_id": 629,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 7,
+    "games_played": 46,
+    "sample": true
+  },
+  {
+    "player_id": 685,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 8,
+    "games_played": 69,
+    "sample": true
+  },
+  {
+    "player_id": 692,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 9,
+    "games_played": 80,
+    "sample": true
+  },
+  {
+    "player_id": 731,
+    "value": 33,
+    "stat_type": "stl",
+    "season": 2026,
+    "rank": 10,
+    "games_played": 80,
+    "sample": true
+  }
+]
